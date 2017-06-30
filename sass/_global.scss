@@ -69,9 +69,18 @@ header{
   // }
 }
 
+.logo_container{
+  padding-left: 25px;
+  padding-top: 25px;
+}
+
 .home_hero{
   min-height: 450px;
   min-width: 100%;
+  background-image: url(https://i.ytimg.com/vi/MCLZrFCRu0A/hqdefault.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
 }
 
 footer{
