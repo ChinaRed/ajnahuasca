@@ -47,6 +47,29 @@ h1 {
   } 
 }
 
+.block_single{
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  // &:before, &:after {
+  //   display: table;
+  //   content: " ";
+  // }
+  position: relative;
+  // float: left;
+  width: 100%;
+  // &--item, &--item__double {
+  //   position: relative;
+  // }
+  // &--item {
+  //   height: calc(25vw - 9px);
+  // }
+  // &--item__double {
+  //   height: calc(50vw - 18px);
+  // } 
+}
+
 .title,
 .subtitle {
   font-size: 1.7vw;
@@ -106,15 +129,15 @@ h1 {
 }
 
 .image-1 {
-  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/953/header-1.jpg);
+  background-image: url(http://phuketcleanse.com/wp-content/uploads/2017/03/ajnalightcover.jpg);
 }
 
 .image-2 {
-  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/953/header-3.jpg);
+  background-image: url(https://www.goldlightcentral.com/wp-content/uploads/2017/01/IMG_0568.jpg);
 }
 
 .image-3 {
-  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/953/header-2.jpg);
+  background-image: url(http://thealchemyofsound.com.au/wp-content/uploads/Ajna-Light1.png);
  }
 
 .image-4 {
