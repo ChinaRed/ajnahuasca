@@ -1,0 +1,184 @@
+/* CSS Reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* End: HTML5 display-role reset for older browsers */
+div {
+  border: 1px solid red; }
+
+header {
+  height: 100px; }
+
+.home_hero {
+  min-height: 450px;
+  min-width: 100%; }
+
+.container-fluid {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  width: 100%; }
+  .container-fluid:before, .container-fluid:after {
+    display: table;
+    content: " "; }
+
+.block {
+  position: relative;
+  float: left;
+  width: 50%; }
+  .block--item, .block--item__double {
+    position: relative; }
+  .block--item {
+    height: calc(25vw - 9px); }
+  .block--item__double {
+    height: calc(50vw - 18px); }
+
+.title,
+.subtitle {
+  font-size: 1.7vw;
+  text-transform: uppercase; }
+
+.title {
+  font-weight: 700;
+  margin-bottom: 0.6rem; }
+
+.subtitle {
+  font-family: "Georgia", Times, Arial;
+  font-style: italic; }
+
+@media screen and (max-width: 768px) {
+  .block {
+    width: 50%; }
+    .block--item {
+      height: calc(50vw - 17px); }
+    .block--item__double {
+      height: calc(100vw - 34px); }
+  .title,
+  .subtitle {
+    font-size: 3.4vw; } }
+
+@media screen and (max-width: 400px) {
+  .block {
+    width: 100%; }
+    .block--item {
+      height: calc(100vw - 34px); }
+    .block--item__double {
+      height: calc(200vw - 68px); }
+  .title,
+  .subtitle {
+    font-size: 6.3vw; } }
+
+.gray-light {
+  background-color: #666; }
+
+.gray-dark {
+  background-color: #333; }
+
+.image-1 {
+  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/953/header-1.jpg); }
+
+.image-2 {
+  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/953/header-3.jpg); }
+
+.image-3 {
+  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/953/header-2.jpg); }
+
+.image-4 {
+  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/953/g6.jpg); }
+
+*,
+*:after,
+*:before {
+  box-sizing: border-box; }
+
+html,
+body {
+  height: 100%; }
+
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizelegibility; }
+
+body {
+  font-family: 'Open Sans', sans-serif; }
+
+a {
+  color: #999;
+  text-decoration: none; }
+
+h1 {
+  color: #999;
+  font-size: 1.2rem;
+  font-weight: 400; }
+
+.img-responsive {
+  display: block;
+  max-width: 100%;
+  width: 100%;
+  height: auto; }
+
+.table-center {
+  display: table !important;
+  width: 100% !important;
+  height: 100%;
+  position: relative; }
+  .table-center > div {
+    color: #fff;
+    display: table-cell !important;
+    vertical-align: middle !important;
+    position: relative;
+    text-align: center; }
+
+.full-image {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center; }
+
+.overHidden {
+  overflow: hidden; }
+
+.content {
+  text-align: center;
+  margin: 4rem; }
