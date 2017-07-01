@@ -37,6 +37,19 @@ h1 {
   .block--item__double {
     height: calc(50vw - 18px); }
 
+.block_triple {
+  position: relative;
+  margin-left: 2%;
+  margin-right: 2%;
+  float: left;
+  width: 25%; }
+  .block_triple--item, .block_triple--item__double {
+    position: relative; }
+  .block_triple--item {
+    height: calc(25vw - 9px); }
+  .block_triple--item__double {
+    height: calc(50vw - 18px); }
+
 .block_single {
   padding-right: 15px;
   padding-left: 15px;
@@ -44,6 +57,10 @@ h1 {
   margin-left: auto;
   position: relative;
   width: 100%; }
+
+.video_carousel {
+  width: 100%;
+  margin-left: 6.5%; }
 
 .title, .subtitle {
   font-size: 1.7vw;
