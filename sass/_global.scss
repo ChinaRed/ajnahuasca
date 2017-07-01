@@ -77,14 +77,26 @@ header{
 .home_hero{
   min-height: 75vh;
   min-width: 100%;
-  background-image: url(https://i.ytimg.com/vi/MCLZrFCRu0A/hqdefault.jpg);
+  background-image: url(http://stars.chromeexperiments.com/images/thumbnail.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
 }
 
-.home_intro{
+.hero_container{
+  span{
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+  }
+  
+}
+
+
+
+.welcome_intro{
   height: 60px;
+  margin: auto;
   .intro_headline{
     text-align: center;
   }

@@ -116,7 +116,8 @@ h1 {
   .table-center:hover {
     border: 2px solid #ef9e9f;
     cursor: hand;
-    background-color: red; }
+    background-color: salmon;
+    opacity: 0.5; }
   .table-center > div {
     color: #fff;
     display: table-cell !important;
@@ -236,14 +237,20 @@ header {
 .home_hero {
   min-height: 75vh;
   min-width: 100%;
-  background-image: url(https://i.ytimg.com/vi/MCLZrFCRu0A/hqdefault.jpg);
+  background-image: url(http://stars.chromeexperiments.com/images/thumbnail.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center; }
 
-.home_intro {
-  height: 60px; }
-  .home_intro .intro_headline {
+.hero_container span {
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center; }
+
+.welcome_intro {
+  height: 60px;
+  margin: auto; }
+  .welcome_intro .intro_headline {
     text-align: center; }
 
 footer {

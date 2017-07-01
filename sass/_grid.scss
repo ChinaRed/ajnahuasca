@@ -150,7 +150,8 @@ h1 {
   &:hover {
     border: 2px solid #ef9e9f;
     cursor: hand; 
-    background-color: red;
+    background-color: salmon;
+    opacity: 0.5;
   }
   > div {
     color: #fff;
