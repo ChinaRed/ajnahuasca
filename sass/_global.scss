@@ -52,21 +52,6 @@ div{
 header{
   height: 80px;
   border-bottom: 1px solid;
-  // @media #{$breakpoint-medium}{
-    // .col-4{
-    //   padding-left: 0 !important;
-    //   margin-left: -20px;
-    // }
-    // .col-12{
-    //   padding-left: 0 !important;
-    // }
-    // .col-8{
-    //   padding-right: 0 !important;
-    //   .col-10{
-    //     padding-right: 0 !important;
-    //   }
-    // }
-  // }
 }
 
 .logo_container{
@@ -81,18 +66,14 @@ header{
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
+  // controls vertical alignment of HERO CONTAINER
+  padding-top: 25%;
 }
 
 .hero_container{
-  span{
-    display: inline-block;
-    vertical-align: middle;
-    text-align: center;
-  }
-  
+  padding: 5% 0; 
+  text-align: center; 
 }
-
-
 
 .welcome_intro{
   height: 60px;
@@ -100,6 +81,29 @@ header{
   .intro_headline{
     text-align: center;
   }
+}
+
+// .table-center{
+//   position: relative;
+// }
+// .title_container{
+//   position: absolute;
+//   // text-align: center;
+// }
+
+// .table-center{
+//     left: 0;
+//     position:absolute;
+//     text-align:center;
+//     top: 30px;
+//     width: 100%
+// }
+
+
+.video_welcome{
+  height: 50px;
+  text-align: center;
+  margin: auto;
 }
 
 footer{
