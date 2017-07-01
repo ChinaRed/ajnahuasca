@@ -57,8 +57,7 @@ h1 {
   width: 100%;
 }
 
-.title,
-.subtitle {
+.title,.subtitle {
   font-size: 1.7vw;
   text-transform: uppercase;
 }
@@ -76,7 +75,6 @@ h1 {
 @media screen and (max-width: 768px) {
   .block {
     width: 50%;
-    // no js
     &--item {
       height: calc(50vw - 17px);
     }
@@ -149,6 +147,11 @@ h1 {
   width: 100% !important;
   height: 100%;
   position: relative;
+  &:hover {
+    border: 2px solid #ef9e9f;
+    cursor: hand; 
+    background-color: red;
+  }
   > div {
     color: #fff;
     display: table-cell !important;
