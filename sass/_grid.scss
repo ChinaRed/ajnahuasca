@@ -34,6 +34,7 @@ h1 {
 
 .block {
   position: relative;
+  padding: 5px 2.5px 5px 2.5px;
   float: left;
   width: 50%;
   &--item, &--item__double {
@@ -52,22 +53,8 @@ h1 {
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
-  // &:before, &:after {
-  //   display: table;
-  //   content: " ";
-  // }
   position: relative;
-  // float: left;
   width: 100%;
-  // &--item, &--item__double {
-  //   position: relative;
-  // }
-  // &--item {
-  //   height: calc(25vw - 9px);
-  // }
-  // &--item__double {
-  //   height: calc(50vw - 18px);
-  // } 
 }
 
 .title,
@@ -137,7 +124,7 @@ h1 {
 }
 
 .image-3 {
-  background-image: url(http://thealchemyofsound.com.au/wp-content/uploads/Ajna-Light1.png);
+  background-image: url(https://static1.squarespace.com/static/555c7b3de4b0d07d4df6f138/t/555eea0ae4b06ffb7e9502f9/1432283673125/how-does-the-ajna-light-work);
  }
 
 .image-4 {
@@ -184,4 +171,20 @@ h1 {
 .content {
   text-align: center;
   margin: 4rem;
+}
+
+.video-container {
+position: relative;
+padding-bottom: 56.25%;
+padding-top: 30px; height: 0; overflow: hidden;
+}
+ 
+.video-container iframe,
+.video-container object,
+.video-container embed {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
 }
