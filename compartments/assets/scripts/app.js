@@ -11,7 +11,6 @@ $(document).ready(function () {
   // Or use this to Open link in same window (similar to target=_blank)
   $(".table-center").click(function(){
       window.location = $(this).find("a:first").attr("href");
-      console.log('awesome');
       return false;
   });
 
