@@ -285,7 +285,8 @@ header {
     color: white; }
   .hero_container h3 {
     font-size: 1em;
-    color: white; }
+    color: white;
+    margin: 30px 0; }
 
 .subscribe_form input[type=text], .subscribe_form select {
   width: 50%;
