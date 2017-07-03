@@ -25,6 +25,16 @@ h1 {
     display: table;
     content: " "; }
 
+.about_container-fluid {
+  padding-right: 0;
+  padding-left: 0;
+  margin-right: auto;
+  margin-left: auto;
+  width: 100%; }
+  .about_container-fluid:before, .about_container-fluid:after {
+    display: table;
+    content: " "; }
+
 .block {
   position: relative;
   float: left;
@@ -324,7 +334,8 @@ header {
   text-align: center; }
 
 .about_hero {
-  height: 580px; }
+  height: 580px;
+  margin-top: 8 0px; }
 
 .about_hero_container {
   height: 300px;
@@ -344,6 +355,11 @@ header {
     max-width: 100%;
     max-height: 100%;
     margin-bottom: 50px; }
+
+.founder_info {
+  width: 50%;
+  float: left;
+  padding: 35px 35px 35px 90px; }
 
 footer {
   display: block;
