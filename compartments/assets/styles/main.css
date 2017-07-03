@@ -254,6 +254,9 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+div {
+  border: 1px solid red; }
+
 header {
   height: 80px;
   border-bottom: 1px solid; }
@@ -319,6 +322,28 @@ header {
 .carousel_welcome {
   margin: 6%;
   text-align: center; }
+
+.about_hero {
+  height: 580px; }
+
+.about_hero_container {
+  height: 300px;
+  width: 600px;
+  text-align: center;
+  margin: auto; }
+
+.about_hero_image {
+  height: 400px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  text-align: center;
+  margin-top: 80px;
+  margin-bottom: 50px; }
+  .about_hero_image img {
+    max-width: 100%;
+    max-height: 100%;
+    margin-bottom: 50px; }
 
 footer {
   display: block;

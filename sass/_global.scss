@@ -62,9 +62,9 @@ table {
   border-spacing: 0;
 }
 
-// div{
-//   border: 1px solid red;
-// }
+div{
+  border: 1px solid red;
+}
 
 header{
   height: 80px;
@@ -88,7 +88,6 @@ header{
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-  // controls vertical alignment of HERO CONTAINER
   padding-top: 30vh;
 }
 
@@ -148,21 +147,35 @@ header{
   text-align: center;
 }
 
-// .table-center{
-//   position: relative;
-// }
-// .title_container{
-//   position: absolute;
-//   // text-align: center;
-// }
 
-// .table-center{
-//     left: 0;
-//     position:absolute;
-//     text-align:center;
-//     top: 30px;
-//     width: 100%
-// }
+// ABOUT PAGE
+
+.about_hero{
+  height: 580px;
+  // margin-top: 50px;
+  // margin-bottom: 50px;
+}
+.about_hero_container{
+  height: 300px;
+  width: 600px;
+  text-align: center;
+  margin: auto;
+}
+.about_hero_image{
+  height: 400px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  text-align: center;
+  margin-top: 80px;
+  margin-bottom: 50px;
+  img{
+    max-width: 100%;
+    max-height: 100%;
+    margin-bottom: 50px;
+  }
+}
+
 footer{
   display: block;
   height: 100px;
