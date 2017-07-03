@@ -21,33 +21,50 @@ time, mark, audio, video {
 }
 
 /* HTML5 display-role reset for older browsers */
+
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
   display: block;
 }
-body {
-  line-height: 1;
+
+html, body {
+  height: 100%;
+  @include font($body-font, none, 300)
 }
+
+h1{
+  @include font($header-font, uppercase, 300)
+  letter-spacing: 4px;
+}
+
+h2, h3, h4, h5{
+  @include font($header-font, uppercase, 200)
+  letter-spacing: 2px;
+  margin: 10px;
+}
+
 ol, ul {
   list-style: none;
 }
+
 blockquote, q {
   quotes: none;
 }
+
 blockquote:before, blockquote:after,
 q:before, q:after {
   content: "";
   content: none;
 }
+
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-/* End: HTML5 display-role reset for older browsers */
 
-div{
-  border: 1px solid red;
-}
+// div{
+//   border: 1px solid red;
+// }
 
 header{
   height: 80px;
@@ -57,12 +74,17 @@ header{
 .logo_container{
   padding-left: 25px;
   padding-top: 25px;
+  display: inline-block;
+}
+
+.header_nav{
+  display: inline-block;
 }
 
 .home_hero{
   min-height: 75vh;
   min-width: 100%;
-  background-image: url(https://upload.wikimedia.org/wikipedia/commons/6/62/Starsinthesky.jpg);
+  background-image: url(../media/hero_image.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -76,11 +98,16 @@ header{
 }
 
 .welcome_intro{
-  height: 60px;
-  margin: auto;
+  // height: 60px;
+  margin: 5%;
   .intro_headline{
     text-align: center;
   }
+}
+
+.carousel_welcome{
+  margin: 6%;
+  text-align: center;
 }
 
 // .table-center{
@@ -98,14 +125,23 @@ header{
 //     top: 30px;
 //     width: 100%
 // }
-
-
-.video_welcome{
-  height: 50px;
-  text-align: center;
-  margin: auto;
-}
-
 footer{
+  display: block;
   height: 100px;
+  border-top: solid 2px gray;
+  border-bottom: solid 1.5px gray;
+  margin-top: 100px;
 }
+
+.footer_contact{
+  text-align: center;
+  display: block;
+  margin: 25px;
+  ul{
+    li{
+      display: inline-block;
+    }
+  }
+}
+
+

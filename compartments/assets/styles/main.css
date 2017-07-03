@@ -16,8 +16,8 @@ h1 {
   font-weight: 400; }
 
 .container-fluid {
-  padding-right: 15px;
-  padding-left: 15px;
+  padding-right: 5%;
+  padding-left: 5%;
   margin-right: auto;
   margin-left: auto;
   width: 100%; }
@@ -27,11 +27,11 @@ h1 {
 
 .block {
   position: relative;
-  padding: 5px 2.5px 5px 2.5px;
   float: left;
   width: 50%; }
   .block--item, .block--item__double {
-    position: relative; }
+    position: relative;
+    margin: 5px; }
   .block--item {
     height: calc(25vw - 9px); }
   .block--item__double {
@@ -71,7 +71,6 @@ h1 {
   margin-bottom: 0.6rem; }
 
 .subtitle {
-  font-family: "Georgia", Times, Arial;
   font-style: italic; }
 
 @media screen and (max-width: 768px) {
@@ -176,15 +175,15 @@ nav ul {
 nav h1:hover {
   cursor: default; }
 
-.main_nav ul li {
+.nav_inline ul li {
   display: inline-block; }
-  .main_nav ul li a {
+  .nav_inline ul li a {
     text-align: center;
     border-bottom: 1px solid #fff;
     text-transform: uppercase;
-    font-size: 11px;
+    font-size: 18px;
     letter-spacing: 1.7px; }
-    .main_nav ul li a:hover {
+    .nav_inline ul li a:hover {
       border-bottom: 1px solid; }
 
 .breadcrumbs {
@@ -221,8 +220,24 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
   display: block; }
 
-body {
-  line-height: 1; }
+html, body {
+  height: 100%;
+  font-family: "Oxygen", sans-serif;
+  text-transform: none;
+  font-weight: 300; }
+
+h1 {
+  font-family: "Raleway", sans-serif;
+  text-transform: uppercase;
+  font-weight: 300;
+  letter-spacing: 4px; }
+
+h2, h3, h4, h5 {
+  font-family: "Raleway", sans-serif;
+  text-transform: uppercase;
+  font-weight: 200;
+  letter-spacing: 2px;
+  margin: 10px; }
 
 ol, ul {
   list-style: none; }
@@ -239,22 +254,22 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-/* End: HTML5 display-role reset for older browsers */
-div {
-  border: 1px solid red; }
-
 header {
   height: 80px;
   border-bottom: 1px solid; }
 
 .logo_container {
   padding-left: 25px;
-  padding-top: 25px; }
+  padding-top: 25px;
+  display: inline-block; }
+
+.header_nav {
+  display: inline-block; }
 
 .home_hero {
   min-height: 75vh;
   min-width: 100%;
-  background-image: url(https://upload.wikimedia.org/wikipedia/commons/6/62/Starsinthesky.jpg);
+  background-image: url(../media/hero_image.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -265,15 +280,24 @@ header {
   text-align: center; }
 
 .welcome_intro {
-  height: 60px;
-  margin: auto; }
+  margin: 5%; }
   .welcome_intro .intro_headline {
     text-align: center; }
 
-.video_welcome {
-  height: 50px;
-  text-align: center;
-  margin: auto; }
+.carousel_welcome {
+  margin: 6%;
+  text-align: center; }
 
 footer {
-  height: 100px; }
+  display: block;
+  height: 100px;
+  border-top: solid 2px gray;
+  border-bottom: solid 1.5px gray;
+  margin-top: 100px; }
+
+.footer_contact {
+  text-align: center;
+  display: block;
+  margin: 25px; }
+  .footer_contact ul li {
+    display: inline-block; }
