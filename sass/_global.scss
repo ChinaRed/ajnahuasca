@@ -62,8 +62,12 @@ table {
   border-spacing: 0;
 }
 
-div{
-  border: 1px solid red;
+// div{
+//   border: 1px solid red;
+// }
+
+.wrapper{
+  display: block;
 }
 
 header{
@@ -135,36 +139,35 @@ header{
 }
 
 .welcome_intro{
-  // height: 60px;
-  margin: 5%;
-  .intro_headline{
-    text-align: center;
-  }
+  padding: 5%;
+  text-align: center;
+  background-color: #f6f3ee;
 }
 
-.carousel_welcome{
-  margin: 6%;
+.section_break{
+  padding: 6%;
   text-align: center;
+  background-color: #f6f3ee;
 }
 
 
 // ABOUT PAGE
-
 .about_hero{
   height: 580px;
   margin-top: 8 0px;
+  display: inline;
   // margin-bottom: 50px;
 }
 .about_hero_container{
-  height: 300px;
   width: 600px;
   text-align: center;
   margin: auto;
 }
 .about_hero_image{
+  background-image: url(../media/ajna_image.png);
   height: 400px;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   background-position: center center;
   text-align: center;
   margin-top: 80px;

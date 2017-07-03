@@ -3,17 +3,9 @@ html {
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizelegibility; }
 
-body {
-  font-family: 'Open Sans', sans-serif; }
-
 a {
   color: #999;
   text-decoration: none; }
-
-h1 {
-  color: #999;
-  font-size: 1.2rem;
-  font-weight: 400; }
 
 .container-fluid {
   padding-right: 5%;
@@ -34,6 +26,9 @@ h1 {
   .about_container-fluid:before, .about_container-fluid:after {
     display: table;
     content: " "; }
+
+.about_font h1, .about_font h2 {
+  color: black; }
 
 .block {
   position: relative;
@@ -122,6 +117,15 @@ h1 {
 
 .image-4 {
   background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/953/g6.jpg); }
+
+.about_image-1 {
+  background-image: url(https://www.goldlightcentral.com/wp-content/uploads/2017/01/IMG_0568.jpg); }
+
+.about_image-2 {
+  background-image: url(https://www.goldlightcentral.com/wp-content/uploads/2017/01/IMG_0568.jpg); }
+
+.about_image-3 {
+  background-image: url(https://www.goldlightcentral.com/wp-content/uploads/2017/01/IMG_0568.jpg); }
 
 *,
 *:after,
@@ -264,8 +268,8 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-div {
-  border: 1px solid red; }
+.wrapper {
+  display: block; }
 
 header {
   height: 80px;
@@ -325,28 +329,30 @@ header {
   background-color: #4c7ac7; }
 
 .welcome_intro {
-  margin: 5%; }
-  .welcome_intro .intro_headline {
-    text-align: center; }
+  padding: 5%;
+  text-align: center;
+  background-color: #f6f3ee; }
 
-.carousel_welcome {
-  margin: 6%;
-  text-align: center; }
+.section_break {
+  padding: 6%;
+  text-align: center;
+  background-color: #f6f3ee; }
 
 .about_hero {
   height: 580px;
-  margin-top: 8 0px; }
+  margin-top: 8 0px;
+  display: inline; }
 
 .about_hero_container {
-  height: 300px;
   width: 600px;
   text-align: center;
   margin: auto; }
 
 .about_hero_image {
+  background-image: url(../media/ajna_image.png);
   height: 400px;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   background-position: center center;
   text-align: center;
   margin-top: 80px;

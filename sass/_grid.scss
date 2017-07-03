@@ -5,21 +5,22 @@ html {
   text-rendering: optimizelegibility;
 }
 
-body {
-  font-family: 'Open Sans', sans-serif;
-}
+// body {
+//   font-family: 'Open Sans', sans-serif;
+// }
 
 a {
   color: #999;
   text-decoration: none;
 }
 
-h1 {
-  color: #999;
-  font-size: 1.2rem;
-  font-weight: 400;
-}
+// h1 {
+//   color: #999;
+//   font-size: 1.2rem;
+//   font-weight: 400;
+// }
 
+//HOME page grid
 .container-fluid {
   padding-right: 5%;
   padding-left: 5%;
@@ -32,6 +33,7 @@ h1 {
   }
 }
 
+// ABOUT page grid
 .about_container-fluid{
   padding-right: 0;
   padding-left: 0;
@@ -41,6 +43,12 @@ h1 {
   &:before, &:after {
     display: table;
     content: " ";
+  }
+}
+
+.about_font{
+  h1, h2{
+    color: black;
   }
 }
 
@@ -149,21 +157,30 @@ h1 {
   background-color: #333;
 }
 
+// HOME images
 .image-1 {
   background-image: url(http://phuketcleanse.com/wp-content/uploads/2017/03/ajnalightcover.jpg);
 }
-
 .image-2 {
   background-image: url(https://www.goldlightcentral.com/wp-content/uploads/2017/01/IMG_0568.jpg);
 }
-
 .image-3 {
   background-image: url(https://static1.squarespace.com/static/555c7b3de4b0d07d4df6f138/t/555eea0ae4b06ffb7e9502f9/1432283673125/how-does-the-ajna-light-work);
  }
-
 .image-4 {
   background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/953/g6.jpg);
  }
+
+// ABOUT images
+.about_image-1{
+  background-image: url(https://www.goldlightcentral.com/wp-content/uploads/2017/01/IMG_0568.jpg)
+}
+.about_image-2{
+  background-image:url(https://www.goldlightcentral.com/wp-content/uploads/2017/01/IMG_0568.jpg)
+}
+.about_image-3{
+  background-image: url(https://www.goldlightcentral.com/wp-content/uploads/2017/01/IMG_0568.jpg)
+}
 
 *,
 *:after,
