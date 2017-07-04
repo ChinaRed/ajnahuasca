@@ -33,7 +33,8 @@ a {
 .block {
   position: relative;
   float: left;
-  width: 50%; }
+  width: 50%;
+  height: 500px; }
   .block--item, .block--item__double {
     position: relative;
     margin: 5px; }
@@ -184,29 +185,27 @@ a {
   height: 100%; }
 
 nav ul {
-  list-style-type: none; }
+  list-style-type: none;
+  padding-left: 10px; }
 
 nav h1:hover {
   cursor: default; }
+
+.header_nav {
+  float: right;
+  padding-top: 27px;
+  padding-right: 25px; }
 
 .nav_inline ul li {
   display: inline-block; }
   .nav_inline ul li a {
     text-align: center;
-    border-bottom: 1px solid #fff;
     text-transform: uppercase;
     font-size: 18px;
     letter-spacing: 1.7px; }
     .nav_inline ul li a:hover {
+      color: #D8D8D8;
       border-bottom: 1px solid; }
-
-.breadcrumbs {
-  padding: 20px 0; }
-  .breadcrumbs ul li {
-    display: inline-block;
-    padding: 0 10px; }
-    .breadcrumbs ul li:last-child {
-      margin-top: 5px; }
 
 /* CSS Reset */
 html, body, div, span, applet, object, iframe,
@@ -268,6 +267,9 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+div {
+  border: 1px solid red; }
+
 .wrapper {
   display: block; }
 
@@ -277,7 +279,7 @@ header {
 
 .logo_container {
   padding-left: 25px;
-  padding-top: 25px;
+  padding-top: 19px;
   display: inline-block; }
 
 .header_nav {
@@ -334,7 +336,7 @@ header {
   background-color: #f6f3ee; }
 
 .section_break {
-  padding: 6%;
+  padding: 4.5%;
   text-align: center;
   background-color: #f6f3ee; }
 
@@ -346,17 +348,17 @@ header {
 .about_hero_image {
   background-image: url(../media/ajna_image.png);
   height: 400px;
-  width: 80%;
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center center;
   text-align: center;
-  margin-top: 80px;
-  margin-bottom: 50px; }
+  margin-top: 80px; }
   .about_hero_image img {
-    max-width: 100%;
-    max-height: 100%;
-    margin-bottom: 50px; }
+    width: 100%;
+    max-height: 100%; }
+
+.about_hero_content {
+  margin: 100px; }
 
 .our_mission {
   text-align: center;
@@ -387,16 +389,20 @@ header {
   .about_our_story h1 {
     text-align: center; }
 
-footer {
+.footer_nav_container {
+  background-color: #272822;
   display: block;
-  height: 100px;
-  border-top: solid 2px gray;
-  border-bottom: solid 1.5px gray;
-  margin-top: 100px; }
+  height: 110px;
+  border-bottom: solid 0.5px lightgray; }
+  .footer_nav_container .footer_logo {
+    padding-top: 20px; }
 
 .footer_contact {
+  background-color: #272822;
+  height: 60px;
   text-align: center;
   display: block;
-  margin: 25px; }
+  padding-top: 10px;
+  color: white; }
   .footer_contact ul li {
     display: inline-block; }

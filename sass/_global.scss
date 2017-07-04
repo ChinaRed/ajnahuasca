@@ -63,9 +63,9 @@ table {
 }
 
 // ADDS RED BORDER TO DIVS
-// div{
-//   border: 1px solid red;
-// }
+div{
+  border: 1px solid red;
+}
 
 .wrapper{
   display: block;
@@ -78,13 +78,17 @@ header{
 
 .logo_container{
   padding-left: 25px;
-  padding-top: 25px;
+  padding-top: 19px;
   display: inline-block;
 }
 
 .header_nav{
   display: inline-block;
 }
+
+// .social_icons{
+//   height: 200px;
+// }
 
 .home_hero{
   min-height: 75vh;
@@ -146,7 +150,7 @@ header{
 }
 
 .section_break{
-  padding: 6%;
+  padding: 4.5%;
   text-align: center;
   background-color: #f6f3ee;
 }
@@ -161,18 +165,19 @@ header{
 .about_hero_image{
   background-image: url(../media/ajna_image.png);
   height: 400px;
-  width: 80%;
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center center;
   text-align: center;
   margin-top: 80px;
-  margin-bottom: 50px;
   img{
-    max-width: 100%;
+    width: 100%;
     max-height: 100%;
-    margin-bottom: 50px;
   }
+}
+
+.about_hero_content{
+  margin: 100px;
 }
 
 .our_mission{
@@ -209,18 +214,23 @@ header{
   }
 }
 
-footer{
+.footer_nav_container{
+  background-color: #272822;
   display: block;
-  height: 100px;
-  border-top: solid 2px gray;
-  border-bottom: solid 1.5px gray;
-  margin-top: 100px;
+  height: 110px;
+  border-bottom: solid 0.5px lightgray;
+  .footer_logo{
+    padding-top: 20px;
+  }
 }
 
 .footer_contact{
+  background-color: #272822;
+  height: 60px;
   text-align: center;
   display: block;
-  margin: 25px;
+  padding-top: 10px;
+  color: white;
   ul{
     li{
       display: inline-block;
