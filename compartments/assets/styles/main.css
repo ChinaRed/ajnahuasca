@@ -47,13 +47,15 @@ a {
   float: left;
   width: 50%;
   height: 500px; }
-  .block_about_page--item, .block_about_page--item__double {
-    position: relative;
-    margin: 5px; }
-  .block_about_page--item {
-    height: calc(25vw - 9px); }
-  .block_about_page--item__double {
-    height: calc(50vw - 18px); }
+
+.about_item {
+  vertical-align: middle !important;
+  position: absolute;
+  top: 50%;
+  height: 10em;
+  margin-top: -5em;
+  margin-left: 10%;
+  margin-right: 10%; }
 
 .block_triple {
   position: relative;
@@ -279,9 +281,6 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-div {
-  border: 1px solid red; }
-
 .wrapper {
   display: block; }
 
@@ -386,19 +385,13 @@ header {
 
 .about_us_image {
   background-image: url(http://kentuckyfriedwrestling.com/theword2/wp-content/uploads/sidhorsemen.jpg);
-  height: 400px;
+  min-height: 500px;
   width: 90%;
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center center;
-  text-align: center;
   margin-top: 80px;
   margin-bottom: 50px;
   margin: auto; }
-  .about_us_image img {
-    max-width: 100%;
-    max-height: 100%;
-    margin-bottom: 50px; }
 
 .about_our_story {
   width: 600px;

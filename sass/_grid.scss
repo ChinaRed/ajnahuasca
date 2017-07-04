@@ -70,21 +70,21 @@ a {
 }
 
 .block_about_page{
-    position: relative;
   // padding: 5px 2.5px 5px 2.5px;
+  position: relative;
   float: left;
   width: 50%;
   height: 500px;
-  &--item, &--item__double {
-    position: relative;
-    margin: 5px;
-  }
-  &--item {
-    height: calc(25vw - 9px);
-  }
-  &--item__double {
-    height: calc(50vw - 18px);
-  } 
+}
+
+.about_item{
+  vertical-align: middle !important;
+  position: absolute;
+  top:50%; 
+  height:10em; 
+  margin-top:-5em;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
 .block_triple{
