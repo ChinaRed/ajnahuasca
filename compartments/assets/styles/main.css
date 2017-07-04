@@ -125,7 +125,7 @@ a {
   background-image: url(https://www.goldlightcentral.com/wp-content/uploads/2017/01/IMG_0568.jpg); }
 
 .about_image-3 {
-  background-image: url(https://www.goldlightcentral.com/wp-content/uploads/2017/01/IMG_0568.jpg); }
+  background-image: url(http://kentuckyfriedwrestling.com/theword2/wp-content/uploads/sidhorsemen.jpg); }
 
 *,
 *:after,
@@ -338,11 +338,6 @@ header {
   text-align: center;
   background-color: #f6f3ee; }
 
-.about_hero {
-  height: 580px;
-  margin-top: 8 0px;
-  display: inline; }
-
 .about_hero_container {
   width: 600px;
   text-align: center;
@@ -351,6 +346,7 @@ header {
 .about_hero_image {
   background-image: url(../media/ajna_image.png);
   height: 400px;
+  width: 80%;
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center center;
@@ -362,10 +358,34 @@ header {
     max-height: 100%;
     margin-bottom: 50px; }
 
-.founder_info {
-  width: 50%;
-  float: left;
-  padding: 35px 35px 35px 90px; }
+.our_mission {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px; }
+
+.about_us_image {
+  background-image: url(http://kentuckyfriedwrestling.com/theword2/wp-content/uploads/sidhorsemen.jpg);
+  height: 400px;
+  width: 90%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  text-align: center;
+  margin-top: 80px;
+  margin-bottom: 50px;
+  margin: auto; }
+  .about_us_image img {
+    max-width: 100%;
+    max-height: 100%;
+    margin-bottom: 50px; }
+
+.about_our_story {
+  width: 600px;
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 50px; }
+  .about_our_story h1 {
+    text-align: center; }
 
 footer {
   display: block;
