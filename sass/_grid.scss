@@ -48,12 +48,29 @@ a {
 
 .about_font{
   h1, h2{
-    color: black;
+    color: gray;
   }
 }
 
 .block {
   position: relative;
+  // padding: 5px 2.5px 5px 2.5px;
+  float: left;
+  width: 50%;
+  &--item, &--item__double {
+    position: relative;
+    margin: 5px;
+  }
+  &--item {
+    height: calc(25vw - 9px);
+  }
+  &--item__double {
+    height: calc(50vw - 18px);
+  } 
+}
+
+.block_about_page{
+    position: relative;
   // padding: 5px 2.5px 5px 2.5px;
   float: left;
   width: 50%;
