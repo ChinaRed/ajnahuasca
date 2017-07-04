@@ -1,4 +1,5 @@
 nav ul{
+  
   list-style-type: none;
   padding-left: 10px;
 }
@@ -8,16 +9,19 @@ nav{
   }
 }
 
+// header nav list
 .header_nav{
   float: right;
   padding-top: 27px;
   padding-right: 25px;
-
 }
 .nav_inline{
   ul {
     li {
       display: inline-block;
+      h1{
+        color: red;
+      }
       a {
         text-align: center;
         text-transform: uppercase;

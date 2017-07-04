@@ -52,7 +52,7 @@ a {
   vertical-align: middle !important;
   position: absolute;
   top: 50%;
-  height: 10em;
+  height: 20em;
   margin-top: -5em;
   margin-left: 10%;
   margin-right: 10%; }
@@ -83,7 +83,7 @@ a {
   margin-left: 6.5%; }
 
 .title, .subtitle {
-  font-size: 1.7vw;
+  font-size: 1.2em;
   text-transform: uppercase; }
 
 .title {
@@ -212,6 +212,8 @@ nav h1:hover {
 
 .nav_inline ul li {
   display: inline-block; }
+  .nav_inline ul li h1 {
+    color: red; }
   .nav_inline ul li a {
     text-align: center;
     text-transform: uppercase;
@@ -261,7 +263,7 @@ h1 {
 
 h2, h3, h4, h5 {
   font-family: "Raleway", sans-serif;
-  text-transform: uppercase;
+  text-transform: none;
   font-weight: 200;
   letter-spacing: 2px;
   margin: 10px; }
@@ -281,6 +283,9 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+div {
+  border: 1px solid red; }
+
 .wrapper {
   display: block; }
 
@@ -292,6 +297,8 @@ header {
   padding-left: 25px;
   padding-top: 19px;
   display: inline-block; }
+  .logo_container .center_text {
+    font-size: 1em; }
 
 .header_nav {
   display: inline-block; }
@@ -341,6 +348,35 @@ header {
 .subscribe_form input[type=submit]:hover {
   background-color: #4c7ac7; }
 
+.reach_out_form_container {
+  width: 50%;
+  margin: auto; }
+  .reach_out_form_container .reach_out_form input[type=text], .reach_out_form_container .reach_out_form select {
+    width: 100%;
+    margin: 8px 0;
+    border-radius: 4px;
+    box-sizing: border-box;
+    display: block; }
+  .reach_out_form_container .reach_out_form input[type=submit] {
+    width: 100%;
+    background-color: #638bce;
+    color: white;
+    font-size: 1em;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    padding: 14px 20px;
+    margin: 8px 0;
+    display: block; }
+  .reach_out_form_container .reach_out_form input[type=submit]:hover {
+    background-color: #4c7ac7; }
+
+.comment_field {
+  padding: 12px 20px; }
+
+.comment_response_field {
+  padding: 12px 0px 200px 20px; }
+
 .welcome_intro {
   padding: 5%;
   text-align: center;
@@ -370,13 +406,15 @@ header {
 
 .about_hero_headline {
   margin-top: 90px;
-  font-size: 1.8em; }
+  font-size: 1.8em;
+  text-align: center; }
 
 .about_hero_subheadline {
   margin-top: 25px;
   margin-left: 6%;
   margin-right: 6%;
-  margin-bottom: 80px; }
+  margin-bottom: 80px;
+  text-align: center; }
 
 .our_mission {
   text-align: center;
@@ -400,6 +438,9 @@ header {
   margin-bottom: 50px; }
   .about_our_story h1 {
     text-align: center; }
+
+.reach_out_section {
+  height: 800px; }
 
 .footer_nav_container {
   background-color: #272822;

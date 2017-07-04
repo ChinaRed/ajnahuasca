@@ -38,7 +38,7 @@ h1{
 }
 
 h2, h3, h4, h5{
-  @include font($header-font, uppercase, 200)
+  @include font($header-font, none, 200)
   letter-spacing: 2px;
   margin: 10px;
 }
@@ -63,9 +63,9 @@ table {
 }
 
 // ADDS RED BORDER TO DIVS
-// div{
-//   border: 1px solid red;
-// }
+div{
+  border: 1px solid red;
+}
 
 .wrapper{
   display: block;
@@ -80,6 +80,9 @@ header{
   padding-left: 25px;
   padding-top: 19px;
   display: inline-block;
+  .center_text{
+    font-size: 1em;
+  } 
 }
 
 .header_nav{
@@ -140,7 +143,45 @@ header{
   input[type=submit]:hover {
     background-color: #4c7ac7;
   }
+}
 
+// ABOUT page form
+.reach_out_form_container{
+  width: 50%;
+  margin: auto;
+  .reach_out_form{
+    input[type=text], select {
+      width: 100%;
+      margin: 8px 0;
+      border-radius: 4px;
+      box-sizing: border-box;
+      display: block;
+      // margin: auto;
+    }
+    input[type=submit]{
+      width: 100%;
+      background-color: #638bce;
+      color: white;
+      font-size: 1em;
+      border-radius: 4px;
+      border: none;
+      cursor: pointer;
+      padding: 14px 20px;
+      margin: 8px 0;
+      display: block;
+      // margin: auto;
+    }
+    input[type=submit]:hover {
+      background-color: #4c7ac7;
+    }
+  }
+}
+.comment_field{
+  padding: 12px 20px;
+}
+
+.comment_response_field{
+  padding: 12px 0px 200px 20px;
 }
 
 .welcome_intro{
@@ -179,13 +220,14 @@ header{
 .about_hero_headline{
   margin-top: 90px;
   font-size: 1.8em;
+  text-align: center;
 }
 .about_hero_subheadline{
   margin-top: 25px;
   margin-left: 6%;
   margin-right: 6%;
-
   margin-bottom: 80px;
+  text-align: center;
 }
 
 .our_mission{
@@ -213,6 +255,10 @@ header{
   h1{
     text-align: center;
   }
+}
+
+.reach_out_section{
+  height: 800px;
 }
 
 .footer_nav_container{
