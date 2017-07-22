@@ -112,13 +112,58 @@ header {
   background-size: cover;
   background-position: center center; }
 
-img {
+.hero_logo_image {
   position: absolute;
   top: 50%;
   left: 50%;
   height: 50%;
   margin-top: -300px;
   margin-left: -225px; }
+
+.welcome_headline {
+  text-align: center;
+  padding: 50px; }
+  .welcome_headline h1 {
+    font-size: 2em; }
+  .welcome_headline h2 {
+    font-size: 1.5em; }
+
+.main_content {
+  width: 80%;
+  margin: auto; }
+  .main_content p {
+    padding: 15px;
+    line-height: 1.5; }
+
+.ayahuasca_summary_image {
+  background-image: url(../media/ayahuasca_summary_image.jpg);
+  height: 500px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 50px; }
+
+.ajnalight_summary_image_1 {
+  background-image: url(../media/ajnalight_setup.png);
+  height: 500px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 50px; }
+
+.ajnalight_summary_image_2 {
+  background-image: url(../media/ajnalight_brain_effect.png);
+  height: 500px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 50px; }
 
 .subscribe_form input[type=text], .subscribe_form select {
   width: 50%;
