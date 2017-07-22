@@ -63,9 +63,9 @@ table {
 }
 
 // ADDS RED BORDER TO DIVS
-// div{
-//   border: 1px solid red;
-// }
+div{
+  border: 1px solid red;
+}
 
 .wrapper{
   display: block;
@@ -94,30 +94,45 @@ header{
 // }
 
 .home_hero{
-  min-height: 75vh;
+  min-height: 70vh;
   min-width: 100%;
-  background-image: url(../media/hero_image.png);
+  background-color: lightgray;
+  background-image: url(../media/lightjump.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-  padding-top: 30vh;
+  // padding-top: 30vh;
 }
 
-.hero_container{
-  padding: 5% 0; 
-  text-align: center;
-  width: 50%;
-  margin: auto;
-  h1{
-    font-size: 2em;
-    color: white;
-  }
-  h3{
-    font-size: 1em;
-    color: white;
-    margin: 30px 0;
-  }
+img{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 50%;
+  margin-top: -300px;
+  margin-left: -225px;
 }
+
+// .hero_logo{
+//   height: 100%;
+//   width: 100%;
+//   background: url(../media/illustrator_logo.png) center center no-repeat;
+// }
+// .hero_container{
+//   padding: 5% 0; 
+//   text-align: center;
+//   width: 50%;
+//   margin: auto;
+//   h1{
+//     font-size: 2em;
+//     color: white;
+//   }
+//   h3{
+//     font-size: 1em;
+//     color: white;
+//     margin: 30px 0;
+//   }
+// }
 
 .subscribe_form{
   input[type=text], select {
