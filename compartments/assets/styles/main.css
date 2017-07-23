@@ -12,9 +12,12 @@ nav h1:hover {
 
 .nav_inline ul li {
   display: inline-block; }
+  .nav_inline ul li:last-child a {
+    margin-right: 200px; }
   .nav_inline ul li h1 {
     color: red; }
   .nav_inline ul li a {
+    margin-left: 25px;
     text-align: center;
     text-transform: uppercase;
     font-size: 18px;
@@ -133,33 +136,6 @@ header {
     padding-top: 15px;
     padding-bottom: 15px;
     line-height: 1.5; }
-
-.main_content_heading {
-  text-align: center;
-  padding-top: 50px;
-  padding-bottom: 50px; }
-
-.home_summary_image {
-  height: 500px;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-  margin: auto;
-  margin-top: 35px;
-  margin-bottom: 35px; }
-
-.ayahuasca_summary_image {
-  background-image: url(../media/ayahuasca_summary_image.jpg); }
-
-.ajnalight_summary_image_1 {
-  background-image: url(../media/ajnalight_setup.png);
-  background-size: contain; }
-
-.ajnalight_summary_image_2 {
-  background-image: url(../media/ajnalight_brain_effect.png);
-  margin-top: 80px;
-  margin-bottom: 80px;
-  background-size: contain; }
 
 .reach_out_section {
   height: 800px;

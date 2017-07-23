@@ -19,10 +19,14 @@ nav{
   ul {
     li {
       display: inline-block;
+      &:last-child a{
+        margin-right: 200px;
+      }
       h1{
         color: red;
       }
       a {
+        margin-left: 25px;
         text-align: center;
         text-transform: uppercase;
         font-size: 18px;
