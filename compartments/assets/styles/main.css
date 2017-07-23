@@ -86,8 +86,15 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+div {
+  border: 1px solid red; }
+
 .wrapper {
   display: block; }
+
+.wrapper_margin {
+  display: block;
+  margin-bottom: 180px; }
 
 header {
   height: 80px;
@@ -112,13 +119,14 @@ header {
   background-size: cover;
   background-position: center center; }
 
-.heading_font h1 {
-  font-size: 2em;
-  font-weight: 600;
-  padding-bottom: 15px; }
-
-.heading_font h2 {
-  font-size: 1.5em; }
+.heading_font {
+  text-align: center; }
+  .heading_font h1 {
+    font-size: 2em;
+    font-weight: 600;
+    padding-bottom: 15px; }
+  .heading_font h2 {
+    font-size: 1.5em; }
 
 .section {
   padding-top: 50px;
@@ -130,12 +138,17 @@ header {
 
 .main_content {
   width: 70%;
-  margin: auto; }
+  margin: auto;
+  margin-top: 25px;
+  margin-bottom: 25px; }
   .main_content p {
     font-size: 1.2em;
     padding-top: 15px;
     padding-bottom: 15px;
     line-height: 1.5; }
+
+.faq_qa h2 {
+  font-size: 1.53em; }
 
 .reach_out_section {
   height: 800px;

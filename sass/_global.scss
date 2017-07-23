@@ -63,12 +63,17 @@ table {
 }
 
 // ADDS RED BORDER TO DIVS
-// div{
-//   border: 1px solid red;
-// }
+div{
+  border: 1px solid red;
+}
 
 .wrapper{
   display: block;
+}
+
+.wrapper_margin{
+  display: block;
+  margin-bottom: 180px;
 }
 
 header{
@@ -101,6 +106,7 @@ header{
 }
 
 .heading_font{
+  text-align: center;
   h1{
     font-size: 2em;
     font-weight: 600;
@@ -124,6 +130,8 @@ header{
 .main_content{
   width: 70%;
   margin: auto;
+  margin-top: 25px;
+  margin-bottom: 25px;
   p{
     font-size: 1.2em;
     padding-top: 15px;
@@ -132,6 +140,11 @@ header{
   }
 }
 
+.faq_qa{
+  h2{
+    font-size: 1.53em;
+  }
+}
 // .main_content_heading{
 //   text-align: center;
 //   padding-top: 50px;
