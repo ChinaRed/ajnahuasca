@@ -104,7 +104,7 @@ header {
   min-height: 70vh;
   min-width: 100%;
   background-color: lightgray;
-  background-image: url(../media/lightjump.png);
+  background-image: url(../media/lightjump_logo.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center; }
@@ -119,6 +119,7 @@ header {
 
 .heading_font h1 {
   font-size: 2em;
+  font-weight: 600;
   padding-bottom: 15px; }
 
 .heading_font h2 {
@@ -136,6 +137,7 @@ header {
   width: 70%;
   margin: auto; }
   .main_content p {
+    font-size: 1.2em;
     padding-top: 15px;
     padding-bottom: 15px;
     line-height: 1.5; }
