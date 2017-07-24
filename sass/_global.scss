@@ -77,21 +77,18 @@ div{
 }
 
 header{
-  height: 80px;
+  // height: 40px;
   border-bottom: 1px solid;
 }
 
 .logo_container{
   padding-left: 25px;
-  padding-top: 19px;
+  padding-top: 5px;
+  padding-bottom: 5px;
   display: inline-block;
   .center_text{
     font-size: 1em;
   } 
-}
-
-.header_nav{
-  display: inline-block;
 }
 
 .home_hero{
@@ -225,17 +222,16 @@ header{
 }
 
 .footer_nav_container{
-  background-color: #272822;
+  background-color: lightgreen;
   display: block;
   height: 110px;
-  border-bottom: solid 0.5px lightgray;
   .footer_logo{
     padding-top: 20px;
   }
 }
 
 .footer_contact{
-  background-color: #272822;
+  background-color: $base-color-1;
   height: 60px;
   text-align: center;
   display: block;

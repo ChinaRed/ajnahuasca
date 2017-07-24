@@ -5,26 +5,48 @@ nav ul {
 nav h1:hover {
   cursor: default; }
 
+header {
+  position: fixed; }
+
 .header_nav {
   float: right;
-  padding-top: 27px;
+  padding-top: 15px;
   padding-right: 25px; }
+  .header_nav .nav_inline ul li {
+    display: inline-block; }
+    .header_nav .nav_inline ul li:last-child a {
+      margin-right: 200px; }
+    .header_nav .nav_inline ul li a {
+      color: #272822;
+      margin-left: 25px;
+      text-align: center;
+      text-transform: uppercase;
+      font-size: 18px;
+      letter-spacing: 1.7px;
+      text-decoration: none; }
+      .header_nav .nav_inline ul li a:hover {
+        color: #D8D8D8; }
 
-.nav_inline ul li {
-  display: inline-block; }
-  .nav_inline ul li:last-child a {
-    margin-right: 200px; }
-  .nav_inline ul li h1 {
-    color: red; }
-  .nav_inline ul li a {
+.footer_nav_inline {
+  display: block;
+  text-align: center; }
+  .footer_nav_inline li {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 40px;
+    margin-right: 40px;
+    border: 1px solid;
+    display: inline-block; }
+  .footer_nav_inline a {
+    color: #272822;
     margin-left: 25px;
     text-align: center;
     text-transform: uppercase;
     font-size: 18px;
-    letter-spacing: 1.7px; }
-    .nav_inline ul li a:hover {
-      color: #D8D8D8;
-      border-bottom: 1px solid; }
+    letter-spacing: 1.7px;
+    text-decoration: none; }
+    .footer_nav_inline a:hover {
+      color: #D8D8D8; }
 
 /* CSS Reset */
 html, body, div, span, applet, object, iframe,
@@ -97,18 +119,15 @@ div {
   margin-bottom: 180px; }
 
 header {
-  height: 80px;
   border-bottom: 1px solid; }
 
 .logo_container {
   padding-left: 25px;
-  padding-top: 19px;
+  padding-top: 5px;
+  padding-bottom: 5px;
   display: inline-block; }
   .logo_container .center_text {
     font-size: 1em; }
-
-.header_nav {
-  display: inline-block; }
 
 .home_hero {
   min-height: 70vh;
@@ -187,10 +206,9 @@ header {
   padding: 12px 0px 200px 20px; }
 
 .footer_nav_container {
-  background-color: #272822;
+  background-color: lightgreen;
   display: block;
-  height: 110px;
-  border-bottom: solid 0.5px lightgray; }
+  height: 110px; }
   .footer_nav_container .footer_logo {
     padding-top: 20px; }
 
