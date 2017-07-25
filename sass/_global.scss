@@ -32,16 +32,6 @@ html, body {
   @include font($body-font, none, 300)
 }
 
-// html{
-//   height: 100%;
-//   overflow: hidden;
-//   @include font($body-font, none, 300)
-// }
-
-body{
-  height: 100%;
-}
-
 h1{
   @include font($header-font, uppercase, 300)
   letter-spacing: 4px;
@@ -77,16 +67,16 @@ table {
 //   border: 1px solid red;
 // }
 
-.wrapper{
-  display: block;
-  top: 68px;
-  position: relative;
-  padding-bottom: 200px;
-}
+// .wrapper{
+//   display: block;
+//   top: 68px;
+//   padding-bottom: 200px;
+// }
 
 .content_wrapper{
-  top: 100px;
-  position: relative;
+  // top: 100px;
+  // position: relative;
+  padding-top: 160px;
   padding-bottom: 200px;
 }
 

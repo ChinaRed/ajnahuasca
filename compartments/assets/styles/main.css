@@ -49,9 +49,6 @@ html, body {
   text-transform: none;
   font-weight: 300; }
 
-body {
-  height: 100%; }
-
 h1 {
   font-family: "Raleway", sans-serif;
   text-transform: uppercase;
@@ -80,15 +77,8 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-.wrapper {
-  display: block;
-  top: 68px;
-  position: relative;
-  padding-bottom: 200px; }
-
 .content_wrapper {
-  top: 100px;
-  position: relative;
+  padding-top: 160px;
   padding-bottom: 200px; }
 
 header {
