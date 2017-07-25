@@ -32,6 +32,16 @@ html, body {
   @include font($body-font, none, 300)
 }
 
+// html{
+//   height: 100%;
+//   overflow: hidden;
+//   @include font($body-font, none, 300)
+// }
+
+body{
+  height: 100%;
+}
+
 h1{
   @include font($header-font, uppercase, 300)
   letter-spacing: 4px;
@@ -63,13 +73,19 @@ table {
 }
 
 // ADDS RED BORDER TO DIVS
-div{
-  border: 1px solid red;
-}
+// div{
+//   border: 1px solid red;
+// }
 
 .wrapper{
   display: block;
   top: 68px;
+  position: relative;
+  padding-bottom: 200px;
+}
+
+.content_wrapper{
+  top: 100px;
   position: relative;
   padding-bottom: 200px;
 }
@@ -89,7 +105,7 @@ header{
   -o-transition: height 0.3s;
   transition: height 0.3s;
   .header_nav{
-    margin-top: 50px;
+    margin-top: 30px;
     -webkit-transition: margin-top 0.3s;
     -moz-transition: margin-top 0.3s;
     -ms-transition: margin-top 0.3s;
@@ -216,40 +232,10 @@ header.condensed{
     font-size: 1.53em;
   }
 }
-// .main_content_heading{
-//   text-align: center;
-//   padding-top: 50px;
-//   padding-bottom: 50px;
-// }
-
-// .home_summary_image{
-//   height: 500px;
-//   background-repeat: no-repeat;
-//   background-size: cover;
-//   background-position: center center;
-//   margin: auto;
-//   margin-top: 35px;
-//   margin-bottom: 35px;
-// }
-
-// .ayahuasca_summary_image{
-//   background-image: url(../media/ayahuasca_summary_image.jpg);
-// }
-
-// .ajnalight_summary_image_1{
-//   background-image: url(../media/ajnalight_setup.png);
-//   background-size: contain;
-// }
-
-// .ajnalight_summary_image_2{
-//   background-image: url(../media/ajnalight_brain_effect.png);
-//   margin-top: 80px;
-//   margin-bottom: 80px;
-//   background-size: contain;
-// }
 
 .reach_out_section{
   height: 800px;
+  padding-top: 80px;
   background-color: #f6f3ee;
 }
 
@@ -296,11 +282,33 @@ header.condensed{
 }
 
 .footer_nav_container{
-  background-color: lightgreen;
+  background-color: $nav-color;
   display: block;
   height: 110px;
-  .footer_logo{
-    padding-top: 20px;
+}
+
+.footer_nav_inline{
+  display: block;
+  text-align: center;
+  border-bottom: lightgray solid 1px;
+  li{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 50px;
+    margin-right: 40px;
+    display: inline-block;
+  }
+  a{
+    color: white;
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 18px;
+    letter-spacing: 1.7px;
+    text-decoration: none;
+    &:hover{
+      color: #D8D8D8;
+    }
   }
 }
 

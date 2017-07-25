@@ -1,9 +1,3 @@
-nav ul{
-  
-  list-style-type: none;
-  padding-left: 10px;
-}
-
 // header nav list
 .header_nav{
   float: right;
@@ -19,8 +13,8 @@ nav ul{
         }
         a {
           color: white;
-          margin-left: 55px;
           text-align: center;
+          font-weight: 600;
           text-transform: uppercase;
           font-size: 18px;
           letter-spacing: 1.7px;
@@ -35,31 +29,7 @@ nav ul{
 }
 
 
-.footer_nav_inline{
-  display: block;
-  text-align: center;
-  // height: 30px;
-  li{
-    margin-top: 20px;
-    margin-bottom: 20px;
-    margin-left: 40px;
-    margin-right: 40px;
-    border: 1px solid;
-    display: inline-block;
-  }
-  a{
-    color: $nav-color;
-    margin-left: 25px;
-    text-align: center;
-    text-transform: uppercase;
-    font-size: 18px;
-    letter-spacing: 1.7px;
-    text-decoration: none;
-    &:hover{
-      color: #D8D8D8;
-    }
-  }
-}
+
 
 // .breadcrumbs{
 //   padding: 20px 0;
