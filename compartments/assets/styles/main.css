@@ -129,12 +129,32 @@ header {
   -ms-transition: height 0.3s;
   -o-transition: height 0.3s;
   transition: height 0.3s; }
+  header .header_nav {
+    margin-top: 50px;
+    -webkit-transition: margin-top 0.3s;
+    -moz-transition: margin-top 0.3s;
+    -ms-transition: margin-top 0.3s;
+    -o-transition: margin-top 0.3s;
+    transition: margin-top 0.3s; }
 
 header.condensed {
   height: 50px; }
   header.condensed .logo_container {
     background-image: url(http://res.cloudinary.com/airship/image/upload/v1500956481/media/logo_condensed_vcjkxn.png);
-    width: 180px !important; }
+    width: 180px !important;
+    -webkit-transition: width 0.3s;
+    -moz-transition: width 0.3s;
+    -ms-transition: width 0.3s;
+    -o-transition: width 0.3s;
+    transition: width 0.3s; }
+  header.condensed .header_nav {
+    margin-top: 20px;
+    display: inline-block;
+    -webkit-transition: margin-top 0.3s;
+    -moz-transition: margin-top 0.3s;
+    -ms-transition: margin-top 0.3s;
+    -o-transition: margin-top 0.3s;
+    transition: margin-top 0.3s; }
 
 .logo_container {
   display: inline-block;
@@ -145,17 +165,9 @@ header.condensed {
   background-repeat: no-repeat;
   width: 250px; }
 
-.logo_container_condensed {
-  background-image: url(http://res.cloudinary.com/airship/image/upload/v1500956481/media/logo_condensed_vcjkxn.png);
-  background-size: contain;
-  background-repeat: no-repeat;
-  width: 200px;
-  height: 30px;
-  display: inline-block; }
-
 .header_nav {
   float: right;
-  margin-top: 20px;
+  margin-top: 50px;
   padding-right: 25px; }
   .header_nav .nav_inline ul li {
     display: inline-block; }
