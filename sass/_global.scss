@@ -69,13 +69,9 @@ div{
 
 .wrapper{
   display: block;
-  top: 78px;
+  top: 68px;
   position: relative;
-}
-
-.wrapper_margin{
-  display: block;
-  margin-bottom: 180px;
+  padding-bottom: 200px;
 }
 
 header{
@@ -134,6 +130,9 @@ header.condensed{
   background-size: contain;
   background-repeat: no-repeat;
   width: 250px;
+}
+.logo_container:hover{
+  cursor: pointer;
 }
 
 .header_nav{

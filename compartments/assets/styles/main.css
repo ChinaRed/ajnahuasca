@@ -2,9 +2,6 @@ nav ul {
   list-style-type: none;
   padding-left: 10px; }
 
-nav h1:hover {
-  cursor: default; }
-
 .header_nav {
   float: right;
   margin-top: 20px;
@@ -73,7 +70,7 @@ footer, header, hgroup, menu, nav, section {
 
 html, body {
   height: 100%;
-  font-family: "Oxygen", sans-serif;
+  font-family: "Raleway", sans-serif;
   text-transform: none;
   font-weight: 300; }
 
@@ -110,12 +107,9 @@ div {
 
 .wrapper {
   display: block;
-  top: 78px;
-  position: relative; }
-
-.wrapper_margin {
-  display: block;
-  margin-bottom: 180px; }
+  top: 68px;
+  position: relative;
+  padding-bottom: 200px; }
 
 header {
   position: fixed;
@@ -168,6 +162,9 @@ header.condensed {
   background-size: contain;
   background-repeat: no-repeat;
   width: 250px; }
+
+.logo_container:hover {
+  cursor: pointer; }
 
 .header_nav {
   float: right;
