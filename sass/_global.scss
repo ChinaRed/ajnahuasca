@@ -69,6 +69,8 @@ div{
 
 .wrapper{
   display: block;
+  top: 78px;
+  position: relative;
 }
 
 .wrapper_margin{
@@ -123,6 +125,8 @@ header.condensed{
 }
 
 .logo_container{
+  margin-top: 9px;
+  margin-left: 10px;
   display: inline-block;
   height: 100%;
   float: left;

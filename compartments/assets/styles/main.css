@@ -109,7 +109,9 @@ div {
   border: 1px solid red; }
 
 .wrapper {
-  display: block; }
+  display: block;
+  top: 78px;
+  position: relative; }
 
 .wrapper_margin {
   display: block;
@@ -157,6 +159,8 @@ header.condensed {
     transition: margin-top 0.3s; }
 
 .logo_container {
+  margin-top: 9px;
+  margin-left: 10px;
   display: inline-block;
   height: 100%;
   float: left;
