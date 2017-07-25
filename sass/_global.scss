@@ -67,14 +67,14 @@ table {
 //   border: 1px solid red;
 // }
 
-.wrapper{
-  padding-top: 68px;
-}
+// .wrapper{
+//   padding-top: 68px;
+// }
 
 .content_wrapper{
   // top: 100px;
   // position: relative;
-  padding-top: 160px;
+  padding-top: 200px;
   padding-bottom: 200px;
 }
 
@@ -87,6 +87,7 @@ header{
   left: 0;
   z-index: 999;
   background-color: $base-color-1;
+  opacity: .8;
   -webkit-transition: height 0.3s;
   -moz-transition: height 0.3s;
   -ms-transition: height 0.3s;
@@ -170,7 +171,7 @@ header.condensed{
 }
 
 .home_hero{
-  min-height: 70vh;
+  min-height: 80vh;
   min-width: 100%;
   background-color: lightgray;
   background-image: url(http://res.cloudinary.com/airship/image/upload/v1500786336/media/lightjump_logo_fsadtu.png);
