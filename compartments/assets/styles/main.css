@@ -7,7 +7,7 @@ nav h1:hover {
 
 .header_nav {
   float: right;
-  margin-top: 38px;
+  margin-top: 20px;
   padding-right: 25px; }
   .header_nav .nav_inline ul li {
     display: inline-block; }
@@ -15,7 +15,7 @@ nav h1:hover {
       margin-right: 200px; }
     .header_nav .nav_inline ul li a {
       color: white;
-      margin-left: 25px;
+      margin-left: 55px;
       text-align: center;
       text-transform: uppercase;
       font-size: 18px;
@@ -116,21 +116,61 @@ div {
   margin-bottom: 180px; }
 
 header {
-  border-bottom: 1px solid;
   position: fixed;
-  background-color: #272822;
   width: 100%;
-  display: block; }
+  height: 80px;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  background-color: #272822;
+  -webkit-transition: height 0.3s;
+  -moz-transition: height 0.3s;
+  -ms-transition: height 0.3s;
+  -o-transition: height 0.3s;
+  transition: height 0.3s; }
+
+header.condensed {
+  height: 50px; }
+  header.condensed .logo_container {
+    background-image: url(http://res.cloudinary.com/airship/image/upload/v1500956481/media/logo_condensed_vcjkxn.png);
+    width: 180px !important; }
 
 .logo_container {
-  margin-top: 10px;
-  margin-left: 10px;
+  display: inline-block;
+  height: 100%;
+  float: left;
   background-image: url(http://res.cloudinary.com/airship/image/upload/v1500956481/media/logo_fujaep.png);
   background-size: contain;
   background-repeat: no-repeat;
+  width: 250px; }
+
+.logo_container_condensed {
+  background-image: url(http://res.cloudinary.com/airship/image/upload/v1500956481/media/logo_condensed_vcjkxn.png);
+  background-size: contain;
+  background-repeat: no-repeat;
   width: 200px;
-  height: 50px;
+  height: 30px;
   display: inline-block; }
+
+.header_nav {
+  float: right;
+  margin-top: 20px;
+  padding-right: 25px; }
+  .header_nav .nav_inline ul li {
+    display: inline-block; }
+    .header_nav .nav_inline ul li:last-child a {
+      margin-right: 200px; }
+    .header_nav .nav_inline ul li a {
+      color: white;
+      margin-left: 55px;
+      text-align: center;
+      text-transform: uppercase;
+      font-size: 18px;
+      letter-spacing: 1.7px;
+      text-decoration: none; }
+      .header_nav .nav_inline ul li a:hover {
+        color: #D8D8D8; }
 
 .home_hero {
   min-height: 70vh;
