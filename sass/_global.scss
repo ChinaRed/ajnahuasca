@@ -71,10 +71,6 @@ div{
   // }
 }
 
-// .wrapper{
-//   padding-top: 68px;
-// }
-
 .content_wrapper{
   // top: 100px;
   // position: relative;
@@ -96,6 +92,9 @@ header{
   -ms-transition: height 0.3s;
   -o-transition: height 0.3s;
   transition: height 0.3s;
+  a{
+    padding: 28px;
+  }
 }
 .header_nav{
   float: right;
@@ -105,28 +104,29 @@ header{
   -ms-transition: 0.3s;
   -o-transition: 0.3s;
   transition: 0.3s;
-  .nav_inline{
-    ul {
+}
+
+//Navigation Links
+.nav_inline{
+  ul {
+    display: inline-block;
+    li {
+      float: left;
+      box-sizing: border-box;
+      width: auto;
       display: inline-block;
-      li {
-        float: left;
-        box-sizing: border-box;
-        width: auto;
-        display: inline-block;
-        a {
-          display: block;
-          padding: 28px;
-          color: white;
-          text-align: center;
-          font-weight: 600;
-          text-transform: uppercase;
-          font-size: 18px;
-          letter-spacing: 4.5px;
-          text-decoration: none;
-          cursor: pointer;
-          &:hover{
-            background-color: rgba(39, 40, 34, 0.4);
-          }
+      a {
+        display: block;
+        color: white;
+        text-align: center;
+        font-weight: 600;
+        text-transform: uppercase;
+        font-size: 18px;
+        letter-spacing: 4.5px;
+        text-decoration: none;
+        cursor: pointer;
+        &:hover{
+          background-color: rgba(39, 40, 34, 0.4);
         }
       }
     }
@@ -174,10 +174,9 @@ header.condensed{
   background-size: contain;
   background-repeat: no-repeat;
   width: 250px;
-}
-
-.logo_container:hover{
-  cursor: pointer;
+  &:hover{
+    cursor: pointer;
+  }
 }
 
 .home_hero{
@@ -281,23 +280,18 @@ header.condensed{
 }
 
 .footer_nav_container{
-  background-color: $nav-color;
-  display: block;
+  background-color: rgba(39, 40, 34, 0.8);
+  // display: block;
   height: 110px;
 }
 
 .footer_nav_inline{
-  display: block;
+  // display: block;
   text-align: center;
   border-bottom: lightgray solid 1px;
-  li{
-    margin-top: 20px;
-    margin-bottom: 20px;
-    margin-left: 50px;
-    margin-right: 40px;
-    display: inline-block;
-  }
   a{
+    display: block;
+    padding: 20px;
     color: white;
     font-weight: 600;
     text-align: center;
@@ -305,9 +299,6 @@ header.condensed{
     font-size: 18px;
     letter-spacing: 1.7px;
     text-decoration: none;
-    &:hover{
-      color: #D8D8D8;
-    }
   }
 }
 
