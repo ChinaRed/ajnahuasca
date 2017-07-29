@@ -1,35 +1,4 @@
 // header nav list
-.header_nav{
-  float: right;
-  margin-top: 20px;
-  // padding-top: 15px;
-  padding-right: 25px;
-  .nav_inline{
-    ul {
-      li {
-        display: inline-block;
-        &:last-child a{
-          margin-right: 200px;
-        }
-        a {
-          color: white;
-          text-align: center;
-          font-weight: 600;
-          text-transform: uppercase;
-          font-size: 18px;
-          letter-spacing: 1.7px;
-          text-decoration: none;
-          &:hover{
-            color: #D8D8D8;
-          }
-        }
-      }
-    }
-  }
-}
-
-
-
 
 // .breadcrumbs{
 //   padding: 20px 0;
