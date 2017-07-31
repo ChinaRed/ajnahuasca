@@ -383,10 +383,12 @@ header {
   border-top: 1px solid white;
   text-decoration: none;
   background-color: rgba(39, 40, 34, 0);
-  padding: 0.7em 1em;
+  padding: 1.2em 1em;
   color: #fff;
   width: 100%;
-  float: left; }
+  float: left;
+  font-weight: 800;
+  letter-spacing: 4px; }
 
 .nav-collapse a:active,
 .nav-collapse .active a {
@@ -394,7 +396,6 @@ header {
 
 @media screen and (min-width: 40em) {
   .nav-collapse a {
-    border-left: 1px solid white;
     padding: 1.02em 2em;
     text-align: center;
     border-top: 0;
