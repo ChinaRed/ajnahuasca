@@ -96,8 +96,13 @@ div {
 .content_wrapper {
   padding-left: 5.5%;
   padding-right: 5.5%;
-  padding-top: 200px;
-  padding-bottom: 200px; }
+  padding-top: 54px;
+  padding-bottom: 120px; }
+
+@media screen and (min-width: 40em) {
+  .content_wrapper {
+    padding-left: 15%;
+    padding-right: 15%; } }
 
 .home_hero {
   min-height: 80vh;
@@ -122,24 +127,20 @@ div {
   padding-bottom: 50px; }
 
 .welcome_headline {
-  text-align: center;
-  padding: 50px; }
+  text-align: center; }
 
 .main_content {
   margin: auto;
-  margin-top: 25px;
-  margin-bottom: 25px; }
+  margin-top: 75px; }
   .main_content p {
     font-size: 1.2em;
     padding-top: 15px;
     padding-bottom: 15px;
-    line-height: 2; }
+    line-height: 1.5; }
 
-.faq_qa {
-  padding-top: 100px; }
-  .faq_qa h2 {
-    font-weight: 600;
-    font-size: 1.2em; }
+.faq_qa h2 {
+  font-weight: 600;
+  font-size: 1.2em; }
 
 .reach_out_section {
   height: 800px;
