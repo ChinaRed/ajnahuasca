@@ -306,8 +306,13 @@ header {
   background-image: url(http://res.cloudinary.com/airship/image/upload/v1500956481/media/logo_fujaep.png);
   background-size: contain;
   background-repeat: no-repeat;
-  width: 250px;
+  width: 170px;
   height: 45px; }
+
+@media screen and (max-width: 40em) {
+  .logo {
+    width: 170px;
+    height: 45px; } }
 
 /* ------------------------------------------
   MASK
