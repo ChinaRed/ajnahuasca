@@ -94,6 +94,8 @@ div {
   border: 1px solid red; }
 
 .content_wrapper {
+  padding-left: 5.5%;
+  padding-right: 5.5%;
   padding-top: 200px;
   padding-bottom: 200px; }
 
@@ -124,7 +126,6 @@ div {
   padding: 50px; }
 
 .main_content {
-  width: 70%;
   margin: auto;
   margin-top: 25px;
   margin-bottom: 25px; }
@@ -132,10 +133,13 @@ div {
     font-size: 1.2em;
     padding-top: 15px;
     padding-bottom: 15px;
-    line-height: 2.3; }
+    line-height: 2; }
 
-.faq_qa h2 {
-  font-size: 1.53em; }
+.faq_qa {
+  padding-top: 100px; }
+  .faq_qa h2 {
+    font-weight: 600;
+    font-size: 1.2em; }
 
 .reach_out_section {
   height: 800px;
@@ -307,12 +311,25 @@ header {
   background-size: contain;
   background-repeat: no-repeat;
   width: 170px;
-  height: 45px; }
+  height: 45px;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s; }
 
 @media screen and (max-width: 40em) {
   .logo {
+    background-image: url(http://res.cloudinary.com/airship/image/upload/v1500956481/media/logo_condensed_vcjkxn.png);
     width: 170px;
-    height: 45px; } }
+    height: 45px;
+    margin-top: 10px;
+    margin-left: 5px;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s; } }
 
 /* ------------------------------------------
   MASK
@@ -387,8 +404,10 @@ header {
   color: #fff;
   width: 100%;
   float: left;
-  font-weight: 800;
+  font-weight: 700;
   letter-spacing: 4px; }
+  .nav-collapse a:hover {
+    background-color: rgba(255, 255, 255, 0.1); }
 
 .nav-collapse a:active,
 .nav-collapse .active a {

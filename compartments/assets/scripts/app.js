@@ -1,5 +1,5 @@
 // $(document).ready(function () {
-
+//   console.log("test");
 //   // Logo link to home page
 //   $(".logo_container").click(function(){
 //       window.location = $(this).find("a:first").attr("href");

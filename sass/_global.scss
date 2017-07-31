@@ -101,28 +101,30 @@ div{
 .content_wrapper{
   // top: 100px;
   // position: relative;
+  padding-left: 5.5%;
+  padding-right: 5.5%;
   padding-top: 200px;
   padding-bottom: 200px;
 }
 
-header{
-  // position: fixed;
-  // width: 100%;
-  // height: 80px;
-  // overflow: hidden;
-  // top: 0;
-  // left: 0;
-  // z-index: 999;
-  // background-color: rgba(39, 40, 34, 0.3);
-  // -webkit-transition: height 0.3s;
-  // -moz-transition: height 0.3s;
-  // -ms-transition: height 0.3s;
-  // -o-transition: height 0.3s;
-  // transition: height 0.3s;
-  // a{
-  //   padding: 28px;
-  // }
-}
+// header{
+//   position: fixed;
+//   width: 100%;
+//   height: 80px;
+//   overflow: hidden;
+//   top: 0;
+//   left: 0;
+//   z-index: 999;
+//   background-color: rgba(39, 40, 34, 0.3);
+//   -webkit-transition: height 0.3s;
+//   -moz-transition: height 0.3s;
+//   -ms-transition: height 0.3s;
+//   -o-transition: height 0.3s;
+//   transition: height 0.3s;
+//   a{
+//     padding: 28px;
+//   }
+// }
 // .header_nav{
 //   float: right;
 //   padding-right: 15%;
@@ -160,7 +162,7 @@ header{
 //   }
 // }
 
-//Condensed header settings 
+// Condensed header settings 
 // header.condensed{
 //   height: 50px;
 //   background-color: rgba(39, 40, 34, 0.8);
@@ -240,7 +242,6 @@ header{
 }
 
 .main_content{
-  width: 70%;
   margin: auto;
   margin-top: 25px;
   margin-bottom: 25px;
@@ -248,13 +249,15 @@ header{
     font-size: 1.2em;
     padding-top: 15px;
     padding-bottom: 15px;
-    line-height: 2.3;
+    line-height: 2;
   }
 }
 
 .faq_qa{
+  padding-top: 100px;
   h2{
-    font-size: 1.53em;
+    font-weight: 600;
+    font-size: 1.2em;
   }
 }
 
@@ -500,14 +503,26 @@ header {
   background-repeat: no-repeat;
   width: 170px;
   height: 45px;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
 }
 
 @media screen and (max-width: 40em) {
   .logo {
     // display: none !important;
-    // background-image: url(http://res.cloudinary.com/airship/image/upload/v1500956481/media/logo_fujaep.png);
+    background-image: url(http://res.cloudinary.com/airship/image/upload/v1500956481/media/logo_condensed_vcjkxn.png);
     width: 170px;
     height: 45px;
+    margin-top: 10px;
+    margin-left: 5px;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
     // opacity: 0 !important;
   }
 }
@@ -602,8 +617,11 @@ header {
   color: #fff;
   width: 100%;
   float: left;
-  font-weight: 800;
+  font-weight: 700;
   letter-spacing: 4px;
+  &:hover{
+    background-color: rgba(255, 255, 255, 0.1);
+  }
 }
 
 .nav-collapse a:active,
