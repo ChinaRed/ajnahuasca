@@ -286,7 +286,8 @@ a:hover {
 
 @media screen and (min-width: 40em) {
   .js .nav-collapse {
-    position: relative; }
+    position: relative;
+    margin-right: 65px; }
   .js .nav-collapse.closed {
     max-height: none; }
   .nav-toggle {
@@ -305,14 +306,15 @@ header {
 
 .logo {
   -webkit-tap-highlight-color: transparent;
-  margin: 5px 15px;
+  margin-top: 5px;
+  margin-left: 5px;
   color: #fff;
   float: left;
   background-image: url(http://res.cloudinary.com/airship/image/upload/v1500956481/media/logo_fujaep.png);
   background-size: contain;
   background-repeat: no-repeat;
-  width: 170px;
-  height: 45px;
+  width: 195px;
+  height: 55px;
   -webkit-transition: 0.3s;
   -moz-transition: 0.3s;
   -ms-transition: 0.3s;
@@ -416,7 +418,7 @@ header {
 
 @media screen and (min-width: 40em) {
   .nav-collapse a {
-    padding: 1.02em 2em;
+    padding: 1.4em 2em;
     text-align: center;
     border-top: 0;
     float: left;
@@ -454,7 +456,7 @@ header {
 .nav-toggle:before {
   color: #fff;
   /* Edit this to change the icon color */
-  font: normal 28px/55px "responsivenav";
+  font: normal 22px/55px "responsivenav";
   /* Edit font-size (28px) to change the icon size */
   text-transform: none;
   text-align: center;
