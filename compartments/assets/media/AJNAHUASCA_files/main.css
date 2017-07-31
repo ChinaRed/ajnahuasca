@@ -75,9 +75,6 @@ h2, h3, h4, h5 {
 ol, ul {
   list-style: none; }
 
-li {
-  text-align: center; }
-
 blockquote, q {
   quotes: none; }
 
@@ -96,6 +93,91 @@ div {
 .content_wrapper {
   padding-top: 200px;
   padding-bottom: 200px; }
+
+header {
+  position: fixed;
+  width: 100%;
+  height: 80px;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  background-color: rgba(39, 40, 34, 0.3);
+  -webkit-transition: height 0.3s;
+  -moz-transition: height 0.3s;
+  -ms-transition: height 0.3s;
+  -o-transition: height 0.3s;
+  transition: height 0.3s; }
+  header a {
+    padding: 28px; }
+
+.header_nav {
+  float: right;
+  padding-right: 15%;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s; }
+
+.nav_inline ul {
+  display: inline-block; }
+  .nav_inline ul li {
+    float: left;
+    box-sizing: border-box;
+    width: auto;
+    display: inline-block; }
+    .nav_inline ul li a {
+      display: block;
+      color: white;
+      text-align: center;
+      font-weight: 600;
+      text-transform: uppercase;
+      font-size: 18px;
+      letter-spacing: 4.5px;
+      text-decoration: none;
+      cursor: pointer; }
+      .nav_inline ul li a:hover {
+        background-color: rgba(39, 40, 34, 0.4); }
+
+header.condensed {
+  height: 50px;
+  background-color: rgba(39, 40, 34, 0.8); }
+  header.condensed .logo_container {
+    background-image: url(http://res.cloudinary.com/airship/image/upload/v1500956481/media/logo_condensed_vcjkxn.png);
+    width: 180px !important;
+    -webkit-transition: width 0.3s;
+    -moz-transition: width 0.3s;
+    -ms-transition: width 0.3s;
+    -o-transition: width 0.3s;
+    transition: width 0.3s; }
+  header.condensed .header_nav {
+    display: inline-block;
+    -webkit-transition: margin-top 0.3s;
+    -moz-transition: margin-top 0.3s;
+    -ms-transition: margin-top 0.3s;
+    -o-transition: margin-top 0.3s;
+    transition: margin-top 0.3s; }
+    header.condensed .header_nav a {
+      padding-top: 22px !important;
+      -webkit-transition: 0.3s;
+      -moz-transition: 0.3s;
+      -ms-transition: 0.3s;
+      -o-transition: 0.3s;
+      transition: 0.3s; }
+
+.logo_container {
+  margin-top: 9px;
+  margin-left: 10px;
+  display: inline-block;
+  height: 100%;
+  float: left;
+  background-image: url(http://res.cloudinary.com/airship/image/upload/v1500956481/media/logo_fujaep.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 250px; }
+  .logo_container:hover {
+    cursor: pointer; }
 
 .home_hero {
   min-height: 80vh;
@@ -202,46 +284,6 @@ div {
   .footer_contact ul li {
     display: inline-block; }
 
-/* =============================================
- *
- *   FIXED RESPONSIVE NAV
- *
- *   (c) 2014 @adtileHQ
- *   http://www.adtile.me
- *   http://twitter.com/adtilehq
- *
- *   Free to use under the MIT License.
- *
- * ============================================= */
-body, div,
-h1, h2, h3, h4, h5, h6,
-p, blockquote, pre, dl, dt, dd, ol, ul, li, hr,
-fieldset, form, label, legend, th, td,
-article, aside, figure, footer, header, hgroup, menu, nav, section,
-summary, hgroup {
-  margin: 0;
-  padding: 0;
-  border: 0; }
-
-a:active,
-a:hover {
-  outline: 0; }
-
-@-webkit-viewport {
-  width: device-width; }
-
-@-moz-viewport {
-  width: device-width; }
-
-@-ms-viewport {
-  width: device-width; }
-
-@-o-viewport {
-  width: device-width; }
-
-@viewport {
-  width: device-width; }
-
 /* ------------------------------------------
   RESPONSIVE NAV STYLES
 --------------------------------------------- */
@@ -288,57 +330,8 @@ a:hover {
     display: none; } }
 
 /* ------------------------------------------
-  FIXED HEADER
---------------------------------------------- */
-header {
-  background: rgba(39, 40, 34, 0.8);
-  position: fixed;
-  z-index: 3;
-  width: 100%;
-  left: 0;
-  top: 0; }
-
-.logo {
-  -webkit-tap-highlight-color: transparent;
-  margin: 5px 15px;
-  color: #fff;
-  float: left;
-  background-image: url(http://res.cloudinary.com/airship/image/upload/v1500956481/media/logo_fujaep.png);
-  background-size: contain;
-  background-repeat: no-repeat;
-  width: 250px;
-  height: 45px; }
-
-/* ------------------------------------------
   MASK
 --------------------------------------------- */
-.mask {
-  -webkit-transition: opacity 300ms;
-  -moz-transition: opacity 300ms;
-  transition: opacity 300ms;
-  background: rgba(0, 0, 0, 0.5);
-  visibility: hidden;
-  position: fixed;
-  opacity: 0;
-  z-index: 2;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  top: 0; }
-
-.android .mask {
-  -webkit-transition: none;
-  transition: none; }
-
-.js-nav-active .mask {
-  visibility: visible;
-  opacity: 1; }
-
-@media screen and (min-width: 40em) {
-  .mask {
-    display: none !important;
-    opacity: 0 !important; } }
-
 /* ------------------------------------------
   NAVIGATION STYLES
 --------------------------------------------- */
@@ -377,7 +370,7 @@ header {
   -webkit-tap-highlight-color: transparent;
   border-top: 1px solid white;
   text-decoration: none;
-  background-color: rgba(39, 40, 34, 0);
+  background: #f4421a;
   padding: 0.7em 1em;
   color: #fff;
   width: 100%;
@@ -385,7 +378,7 @@ header {
 
 .nav-collapse a:active,
 .nav-collapse .active a {
-  background-color: lightgray; }
+  background: #b73214; }
 
 @media screen and (min-width: 40em) {
   .nav-collapse a {
@@ -409,8 +402,8 @@ header {
 --------------------------------------------- */
 @font-face {
   font-family: "responsivenav";
-  src: url("../media/icons/responsivenav.eot");
-  src: url("../media/icons/responsivenav.eot?#iefix") format("embedded-opentype"), url("../media/icons/responsivenav.ttf") format("truetype"), url("../media/icons/responsivenav.woff") format("woff"), url("../media/icons/responsivenav.svg#responsivenav") format("svg");
+  src: url("../icons/responsivenav.eot");
+  src: url("../icons/responsivenav.eot?#iefix") format("embedded-opentype"), url("../icons/responsivenav.ttf") format("truetype"), url("../icons/responsivenav.woff") format("woff"), url("../icons/responsivenav.svg#responsivenav") format("svg");
   font-weight: normal;
   font-style: normal; }
 
