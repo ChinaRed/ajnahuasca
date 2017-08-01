@@ -310,7 +310,8 @@ header {
 
 @media screen and (max-width: 40em) {
   header {
-    position: absolute; }
+    position: absolute;
+    border-bottom: 1px solid #bbbbbb; }
   .logo {
     background-image: url(http://res.cloudinary.com/airship/image/upload/v1500956481/media/logo_condensed_vcjkxn.png);
     width: 165px;
@@ -398,11 +399,12 @@ header {
   font-weight: 600;
   letter-spacing: 2px; }
   .nav-collapse a:hover {
-    color: #00bddb; }
+    color: white;
+    background-color: #bbbbbb; }
 
 .nav-collapse a:active,
 .nav-collapse .active a {
-  background-color: lightgray; }
+  color: white; }
 
 @media screen and (min-width: 40em) {
   .nav-collapse a {
@@ -413,7 +415,7 @@ header {
     margin: 0; } }
 
 .nav-collapse ul ul a {
-  background: #ca3716;
+  background: #bbbbbb;
   padding-left: 2em; }
 
 @media screen and (min-width: 40em) {

@@ -557,6 +557,7 @@ header {
   // margin-top: 0;
   header{
     position: absolute;
+    border-bottom: 1px solid #bbbbbb;
   }
   .logo {
     // display: none !important;
@@ -667,13 +668,14 @@ header {
   font-weight: 600;
   letter-spacing: 2px;
   &:hover{
-    color: #00bddb;
+    color: white;
+    background-color: #bbbbbb;
   }
 }
 
 .nav-collapse a:active,
 .nav-collapse .active a {
-  background-color: lightgray;
+  color: white;
 }
 
 @media screen and (min-width: 40em) {
@@ -687,7 +689,7 @@ header {
 }
 
 .nav-collapse ul ul a {
-  background: #ca3716;
+  background: #bbbbbb;
   padding-left: 2em;
 }
 
