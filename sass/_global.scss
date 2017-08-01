@@ -92,7 +92,7 @@ table {
 
 // ADDS RED BORDER TO DIVS
 div{
-  border: 1px solid red;
+  // border: 1px solid red;
   // ul li{
   //   border: 1px solid green;
   // }
@@ -327,12 +327,13 @@ div{
 }
 
 .footer_nav_container{
-  background-color: rgba(39, 40, 34, 0.8);
+  background-color: $base-color-1;
   // display: block;
   // height: 110px;
 }
 
 .footer_nav_inline{
+  // display: inline-block;
   nav{
     text-align: center;
   }
@@ -357,19 +358,29 @@ div{
   }
 }
 
-.footer_contact{
-  background-color: $base-color-1;
-  height: 60px;
-  text-align: center;
-  display: block;
-  padding-top: 10px;
-  color: white;
-  ul{
-    li{
-      display: inline-block;
-    }
-  }
+.footer_logo_text{
+  margin-top: -30px;
+  margin-right: 20px;
+  float: right;
+  font-size: .75em;
+  display: inline-block;
+  text-decoration: none;
+  color: #bbbbbb;
 }
+
+// .footer_contact{
+//   background-color: $base-color-1;
+//   height: 60px;
+//   text-align: center;
+//   display: block;
+//   padding-top: 10px;
+//   color: white;
+//   ul{
+//     li{
+//       display: inline-block;
+//     }
+//   }
+// }
 
 //Header responsive media querie
 // header{
@@ -511,7 +522,7 @@ div{
 --------------------------------------------- */
 
 header {
-  background: rgba(39, 40, 34, 0.8);
+  background: rgba(45, 48, 61, .9);
   position: fixed;
   z-index: 3;
   width: 100%;
