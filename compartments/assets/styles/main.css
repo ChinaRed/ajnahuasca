@@ -90,10 +90,6 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-.wrapper {
-  background: url(https://giphy.com/gifs/26tn6Me6pD4Bel37G/html5) no-repeat center center fixed;
-  background-size: cover; }
-
 .content_wrapper {
   padding-left: 5.5%;
   padding-right: 5.5%;
@@ -107,10 +103,24 @@ table {
     padding-left: 10%;
     padding-right: 10%; } }
 
+header.condensed {
+  height: 48px; }
+  header.condensed .logo {
+    background-image: url(http://res.cloudinary.com/airship/image/upload/v1500956481/media/logo_condensed_vcjkxn.png);
+    margin-top: 8px;
+    margin-left: 20px;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s; }
+
+.menu-item.condensed a {
+  padding-top: 1em; }
+
 .home_hero {
   min-height: 80vh;
   min-width: 100%;
-  background-color: lightgray;
   background-image: url(http://res.cloudinary.com/airship/image/upload/v1501560332/media/hero_logo_pi1jxz.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -139,7 +149,8 @@ table {
     font-size: 1.2em;
     padding-top: 15px;
     padding-bottom: 15px;
-    line-height: 1.5; }
+    line-height: 1.5;
+    text-align: justify; }
 
 .faq_qa h2 {
   font-weight: 600;
@@ -259,6 +270,8 @@ table {
 
 .nav-collapse.opened {
   max-height: 9999px; }
+  .nav-collapse.opened li {
+    background: #2d303d; }
 
 .disable-pointer-events {
   pointer-events: none !important; }
@@ -294,8 +307,8 @@ header {
 
 .logo {
   -webkit-tap-highlight-color: transparent;
-  margin-top: 5px;
-  margin-left: 5px;
+  margin-top: 10px;
+  margin-left: 15px;
   float: left;
   background-image: url(http://res.cloudinary.com/airship/image/upload/v1500956481/media/logo_fujaep.png);
   background-size: contain;
@@ -310,13 +323,11 @@ header {
 
 @media screen and (max-width: 40em) {
   header {
-    position: absolute;
     border-bottom: 1px solid #bbbbbb; }
   .logo {
     background-image: url(http://res.cloudinary.com/airship/image/upload/v1500956481/media/logo_condensed_vcjkxn.png);
     width: 165px;
     height: 40px;
-    margin-left: 5px;
     -webkit-transition: 0.3s;
     -moz-transition: 0.3s;
     -ms-transition: 0.3s;
@@ -356,12 +367,6 @@ header {
 /* ------------------------------------------
   NAVIGATION STYLES
 --------------------------------------------- */
-.fixed {
-  position: fixed;
-  width: 100%;
-  left: 0;
-  top: 0; }
-
 .nav-collapse,
 .nav-collapse * {
   -webkit-box-sizing: border-box;
@@ -391,16 +396,14 @@ header {
   -webkit-tap-highlight-color: transparent;
   border-top: 1px solid white;
   text-decoration: none;
-  background-color: rgba(39, 40, 34, 0);
-  padding: 1.2em 1em;
-  color: #bbbbbb;
+  padding: 1.7em 1.5em;
+  color: white;
   width: 100%;
   float: left;
-  font-weight: 600;
+  font-weight: 400;
   letter-spacing: 2px; }
   .nav-collapse a:hover {
-    color: white;
-    background-color: #bbbbbb; }
+    color: #00b5a3; }
 
 .nav-collapse a:active,
 .nav-collapse .active a {
@@ -408,7 +411,6 @@ header {
 
 @media screen and (min-width: 40em) {
   .nav-collapse a {
-    padding: 1.4em 2em;
     text-align: center;
     border-top: 0;
     float: left;

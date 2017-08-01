@@ -98,10 +98,6 @@ div{
   // }
 }
 
-.wrapper{
-  background: url(https://giphy.com/gifs/26tn6Me6pD4Bel37G/html5)no-repeat center center fixed;
-  background-size: cover;
-}
 
 .content_wrapper{
   // top: 100px;
@@ -178,18 +174,26 @@ div{
 // }
 
 // Condensed header settings 
-// header.condensed{
-//   height: 50px;
-//   background-color: rgba(39, 40, 34, 0.8);
-//   .logo_container{
-//     background-image: url(http://res.cloudinary.com/airship/image/upload/v1500956481/media/logo_condensed_vcjkxn.png);
-//     width: 180px !important;
-//     -webkit-transition: width 0.3s;
-//     -moz-transition: width 0.3s;
-//     -ms-transition: width 0.3s;
-//     -o-transition: width 0.3s;
-//     transition: width 0.3s;
-//   }
+header.condensed{
+  height: 48px;
+  .logo{
+    background-image: url(http://res.cloudinary.com/airship/image/upload/v1500956481/media/logo_condensed_vcjkxn.png);
+    // width: 150px !important;
+    margin-top: 8px;
+    margin-left: 20px;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+  }
+}
+
+.menu-item.condensed{
+  a{
+    padding-top: 1em;
+  }
+}
 //   .header_nav{
 //     // display: inline-block;
 //     -webkit-transition: margin-top 0.3s;
@@ -198,7 +202,7 @@ div{
 //     -o-transition: margin-top 0.3s;
 //     transition: margin-top 0.3s;
 //     a{
-//       padding-top: 22px !important;
+//       // padding-top: 15px !important;
 //       -webkit-transition: 0.3s;
 //       -moz-transition: 0.3s;
 //       -ms-transition: 0.3s;
@@ -226,7 +230,6 @@ div{
 .home_hero{
   min-height: 80vh;
   min-width: 100%;
-  background-color: lightgray;
   background-image: url(http://res.cloudinary.com/airship/image/upload/v1501560332/media/hero_logo_pi1jxz.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -263,6 +266,7 @@ div{
     padding-top: 15px;
     padding-bottom: 15px;
     line-height: 1.5;
+    text-align: justify;
   }
 }
 
@@ -494,6 +498,9 @@ div{
 
 .nav-collapse.opened {
   max-height: 9999px;
+  li{
+    background: rgba(45, 48, 61, 1);
+  }
 }
 
 .disable-pointer-events {
@@ -538,8 +545,8 @@ header {
 
 .logo {
   -webkit-tap-highlight-color: rgba(0,0,0,0);
-  margin-top: 5px;
-  margin-left: 5px;
+  margin-top: 10px;
+  margin-left: 15px;
   float: left;
   background-image: url(http://res.cloudinary.com/airship/image/upload/v1500956481/media/logo_fujaep.png);
   background-size: contain;
@@ -556,7 +563,7 @@ header {
 @media screen and (max-width: 40em) {
   // margin-top: 0;
   header{
-    position: absolute;
+    // position: absolute;
     border-bottom: 1px solid #bbbbbb;
   }
   .logo {
@@ -565,7 +572,7 @@ header {
     width: 165px;
     height: 40px;
     // margin-top: 10px;
-    margin-left: 5px;
+    // margin-left: 15px;
     -webkit-transition: 0.3s;
     -moz-transition: 0.3s;
     -ms-transition: 0.3s;
@@ -617,12 +624,12 @@ header {
   NAVIGATION STYLES
 --------------------------------------------- */
 
-.fixed {
-  position: fixed;
-  width: 100%;
-  left: 0;
-  top: 0;
-}
+// .fixed {
+//   position: fixed;
+//   width: 100%;
+//   left: 0;
+//   top: 0;
+// }
 
 .nav-collapse,
 .nav-collapse * {
@@ -660,16 +667,16 @@ header {
   -webkit-tap-highlight-color: rgba(0,0,0,0);
   border-top: 1px solid white;
   text-decoration: none;
-  background-color: rgba(39, 40, 34, 0);
-  padding: 1.2em 1em;
-  color: #bbbbbb;
+  // background-color: rgba(39, 40, 34, 0);
+  padding: 1.7em 1.5em;
+  color: white;
   width: 100%;
   float: left;
-  font-weight: 600;
+  font-weight: 400;
   letter-spacing: 2px;
   &:hover{
-    color: white;
-    background-color: #bbbbbb;
+    color: #00b5a3;
+    // background-color: #bbbbbb;
   }
 }
 
@@ -680,7 +687,6 @@ header {
 
 @media screen and (min-width: 40em) {
   .nav-collapse a {
-    padding: 1.4em 2em;
     text-align: center;
     border-top: 0;
     float: left;
@@ -745,7 +751,6 @@ header {
   font-size: 24px;
   content: "\78"; /* Close icon */
 }
-
 
 
 
