@@ -555,11 +555,14 @@ header {
 
 @media screen and (max-width: 40em) {
   // margin-top: 0;
+  header{
+    position: absolute;
+  }
   .logo {
     // display: none !important;
     background-image: url(http://res.cloudinary.com/airship/image/upload/v1500956481/media/logo_condensed_vcjkxn.png);
-    width: 150px;
-    height: 30px;
+    width: 165px;
+    height: 40px;
     // margin-top: 10px;
     margin-left: 5px;
     -webkit-transition: 0.3s;
@@ -718,13 +721,13 @@ header {
   position: relative;
   overflow: hidden;
   width: 60px;
-  height: 30px;
+  height: 40px;
   float: right;
 }
 
 .nav-toggle:before {
   color: #fff; /* Edit this to change the icon color */
-  font: normal 28px/40px "responsivenav"; /* Edit font-size (28px) to change the icon size */
+  font: normal 30px/45px "responsivenav"; /* Edit font-size (28px) to change the icon size */
   text-transform: none;
   text-align: center;
   position: absolute;
