@@ -55,18 +55,18 @@ footer, header, hgroup, menu, nav, section {
 
 html, body {
   height: 100%;
-  font-family: "Raleway", sans-serif;
+  font-family: "Oxygen", sans-serif;
   text-transform: none;
   font-weight: 300; }
 
 h1 {
-  font-family: "Raleway", sans-serif;
+  font-family: "Oxygen", sans-serif;
   text-transform: uppercase;
   font-weight: 300;
   letter-spacing: 4px; }
 
 h2, h3, h4, h5 {
-  font-family: "Raleway", sans-serif;
+  font-family: "Oxygen", sans-serif;
   text-transform: none;
   font-weight: 200;
   letter-spacing: 2px;
@@ -93,6 +93,10 @@ table {
 div {
   border: 1px solid red; }
 
+.wrapper {
+  background: url(https://giphy.com/gifs/26tn6Me6pD4Bel37G/html5) no-repeat center center fixed;
+  background-size: cover; }
+
 .content_wrapper {
   padding-left: 5.5%;
   padding-right: 5.5%;
@@ -101,14 +105,16 @@ div {
 
 @media screen and (min-width: 40em) {
   .content_wrapper {
-    padding-left: 15%;
-    padding-right: 15%; } }
+    margin-right: 100px;
+    margin-left: 100px;
+    padding-left: 10%;
+    padding-right: 10%; } }
 
 .home_hero {
   min-height: 80vh;
   min-width: 100%;
   background-color: lightgray;
-  background-image: url(http://res.cloudinary.com/airship/image/upload/v1500786336/media/lightjump_logo_fsadtu.png);
+  background-image: url(http://res.cloudinary.com/airship/image/upload/v1501560332/media/hero_logo_pi1jxz.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center; }
@@ -184,22 +190,28 @@ div {
   padding: 12px 0px 200px 20px; }
 
 .footer_nav_container {
-  background-color: rgba(39, 40, 34, 0.8);
-  height: 110px; }
+  background-color: rgba(39, 40, 34, 0.8); }
 
-.footer_nav_inline {
-  text-align: center;
-  border-bottom: lightgray solid 1px; }
-  .footer_nav_inline a {
-    display: block;
-    padding: 20px;
-    color: white;
-    font-weight: 600;
-    text-align: center;
-    text-transform: uppercase;
-    font-size: 18px;
-    letter-spacing: 1.7px;
-    text-decoration: none; }
+.footer_nav_inline nav {
+  text-align: center; }
+
+.footer_nav_inline ul {
+  display: inline-block; }
+
+.footer_nav_inline li {
+  display: inline-block; }
+
+.footer_nav_inline a {
+  padding: 15px;
+  font-size: .75em;
+  display: block;
+  -webkit-tap-highlight-color: transparent;
+  text-decoration: none;
+  background-color: rgba(39, 40, 34, 0);
+  color: #bbbbbb;
+  letter-spacing: 2px; }
+  .footer_nav_inline a:hover {
+    color: white; }
 
 .footer_contact {
   background-color: #272822;
@@ -222,35 +234,6 @@ div {
  *   Free to use under the MIT License.
  *
  * ============================================= */
-body, div,
-h1, h2, h3, h4, h5, h6,
-p, blockquote, pre, dl, dt, dd, ol, ul, li, hr,
-fieldset, form, label, legend, th, td,
-article, aside, figure, footer, header, hgroup, menu, nav, section,
-summary, hgroup {
-  margin: 0;
-  padding: 0;
-  border: 0; }
-
-a:active,
-a:hover {
-  outline: 0; }
-
-@-webkit-viewport {
-  width: device-width; }
-
-@-moz-viewport {
-  width: device-width; }
-
-@-ms-viewport {
-  width: device-width; }
-
-@-o-viewport {
-  width: device-width; }
-
-@viewport {
-  width: device-width; }
-
 /* ------------------------------------------
   RESPONSIVE NAV STYLES
 --------------------------------------------- */
@@ -312,7 +295,6 @@ header {
   -webkit-tap-highlight-color: transparent;
   margin-top: 5px;
   margin-left: 5px;
-  color: #fff;
   float: left;
   background-image: url(http://res.cloudinary.com/airship/image/upload/v1500956481/media/logo_fujaep.png);
   background-size: contain;
@@ -329,8 +311,7 @@ header {
   .logo {
     background-image: url(http://res.cloudinary.com/airship/image/upload/v1500956481/media/logo_condensed_vcjkxn.png);
     width: 150px;
-    height: 38px;
-    margin-top: 10px;
+    height: 30px;
     margin-left: 5px;
     -webkit-transition: 0.3s;
     -moz-transition: 0.3s;
@@ -408,13 +389,13 @@ header {
   text-decoration: none;
   background-color: rgba(39, 40, 34, 0);
   padding: 1.2em 1em;
-  color: #fff;
+  color: #bbbbbb;
   width: 100%;
   float: left;
-  font-weight: 700;
-  letter-spacing: 4px; }
+  font-weight: 600;
+  letter-spacing: 2px; }
   .nav-collapse a:hover {
-    background-color: rgba(255, 255, 255, 0.1); }
+    color: #00bddb; }
 
 .nav-collapse a:active,
 .nav-collapse .active a {
@@ -454,13 +435,13 @@ header {
   position: relative;
   overflow: hidden;
   width: 60px;
-  height: 40px;
+  height: 30px;
   float: right; }
 
 .nav-toggle:before {
   color: #fff;
   /* Edit this to change the icon color */
-  font: normal 22px/45px "responsivenav";
+  font: normal 28px/40px "responsivenav";
   /* Edit font-size (28px) to change the icon size */
   text-transform: none;
   text-align: center;
