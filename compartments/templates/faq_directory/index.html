@@ -4,11 +4,12 @@
       <h1>FAQ</h1>
       <h2>Frequently Asked Questions</h2>
     </div>
-    {{#each items}} 
+    {{#sort_list items sort="published_on" order="asc"}} 
       <div class="faq_qa main_content">
         <h2>{{fields.question}}</h2>
         {{{fields.answer}}}
       </div>
-    {{/each}} 
+    {{/sort_list}} 
   </div>
 </div>
+

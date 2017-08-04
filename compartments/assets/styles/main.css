@@ -59,11 +59,24 @@ html, body {
   text-transform: none;
   font-weight: 300; }
 
+p {
+  font-size: 12pt;
+  line-height: 1.25em; }
+
+@media screen and (max-width: 40em) {
+  p {
+    font-size: 1em; } }
+
 h1 {
+  font-size: 36pt;
+  line-height: 1.25em;
   font-family: "Oxygen", sans-serif;
   text-transform: uppercase;
   font-weight: 300;
   letter-spacing: 4px; }
+
+@media screen and (max-width: 40em) {
+  font-size: 2em; }
 
 h2, h3, h4, h5 {
   font-family: "Oxygen", sans-serif;
@@ -102,27 +115,6 @@ table {
     margin-left: 100px;
     padding-left: 10%;
     padding-right: 10%; } }
-
-header.condensed {
-  height: 48px; }
-  header.condensed .logo {
-    height: 30px;
-    background-image: url(http://res.cloudinary.com/airship/image/upload/v1500956481/media/logo_condensed_vcjkxn.png);
-    margin-top: 8px;
-    margin-left: 20px;
-    -webkit-transition: 0.3s;
-    -moz-transition: 0.3s;
-    -ms-transition: 0.3s;
-    -o-transition: 0.3s;
-    transition: 0.3s; }
-
-.menu-item.condensed a {
-  padding-top: 1em;
-  -webkit-transition: 0.3s;
-  -moz-transition: 0.3s;
-  -ms-transition: 0.3s;
-  -o-transition: 0.3s;
-  transition: 0.3s; }
 
 .home_hero {
   min-height: 80vh;
@@ -223,7 +215,12 @@ header.condensed {
   text-decoration: none;
   background-color: rgba(39, 40, 34, 0);
   color: #bbbbbb;
-  letter-spacing: 2px; }
+  letter-spacing: 2px;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s; }
   .footer_nav_inline a:hover {
     color: white; }
 
@@ -322,12 +319,7 @@ header {
   background-size: contain;
   background-repeat: no-repeat;
   width: 195px;
-  height: 55px;
-  -webkit-transition: 0.3s;
-  -moz-transition: 0.3s;
-  -ms-transition: 0.3s;
-  -o-transition: 0.3s;
-  transition: 0.3s; }
+  height: 55px; }
 
 @media screen and (max-width: 40em) {
   header {
@@ -335,12 +327,7 @@ header {
   .logo {
     background-image: url(http://res.cloudinary.com/airship/image/upload/v1500956481/media/logo_condensed_vcjkxn.png);
     width: 165px;
-    height: 40px;
-    -webkit-transition: 0.3s;
-    -moz-transition: 0.3s;
-    -ms-transition: 0.3s;
-    -o-transition: 0.3s;
-    transition: 0.3s; } }
+    height: 40px; } }
 
 /* ------------------------------------------
   MASK
@@ -401,7 +388,7 @@ header {
     width: auto; } }
 
 .nav-collapse a {
-  -webkit-tap-highlight-color: transparent;
+  -webkit-tap-highlight-color: #cccccc;
   border-top: 1px solid white;
   text-decoration: none;
   padding: 1.7em 1.5em;
@@ -409,7 +396,12 @@ header {
   width: 100%;
   float: left;
   font-weight: 400;
-  letter-spacing: 2px; }
+  letter-spacing: 2px;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s; }
   .nav-collapse a:hover {
     color: #00b5a3; }
 
