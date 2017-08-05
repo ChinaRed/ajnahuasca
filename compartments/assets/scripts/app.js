@@ -1,3 +1,11 @@
+$(document).ready(function(){
+  $('#nav-icon').click(function(){
+    $(this).toggleClass('open');
+    $('.header_nav').toggleClass('open_tray');
+  });
+});
+
+
 // $(document).ready(function () {
 
   // Logo link to home page
