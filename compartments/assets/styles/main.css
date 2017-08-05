@@ -65,7 +65,7 @@ p {
 
 @media screen and (max-width: 40em) {
   p {
-    font-size: 1em; } }
+    font-size: 1.1em; } }
 
 h1 {
   font-size: 36pt;
@@ -144,11 +144,11 @@ div {
 .heading_font {
   text-align: center; }
   .heading_font h1 {
-    font-size: 2em;
-    font-weight: 600;
+    font-size: 1.7;
     padding-bottom: 15px; }
   .heading_font h2 {
-    font-size: 1.5em; }
+    font-size: 1.2em;
+    font-weight: 400; }
 
 .section {
   padding-top: 50px;
@@ -160,8 +160,9 @@ div {
 .main_content {
   margin: auto;
   margin-top: 75px; }
+  .main_content h1 {
+    line-height: 1.5; }
   .main_content p {
-    font-size: 1.2em;
     padding-top: 15px;
     padding-bottom: 15px;
     line-height: 1.5;
@@ -176,9 +177,8 @@ div {
   font-size: 1em; }
 
 .reach_out_section {
-  height: 800px;
   padding-top: 80px;
-  background-color: #f6f3ee; }
+  background-color: #fff; }
 
 .reach_out_headline {
   text-align: center; }
@@ -302,33 +302,6 @@ header {
 /* ------------------------------------------
   MASK
 --------------------------------------------- */
-.mask {
-  -webkit-transition: opacity 300ms;
-  -moz-transition: opacity 300ms;
-  transition: opacity 300ms;
-  background: rgba(0, 0, 0, 0.5);
-  visibility: hidden;
-  position: fixed;
-  opacity: 0;
-  z-index: 2;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  top: 0; }
-
-.android .mask {
-  -webkit-transition: none;
-  transition: none; }
-
-.js-nav-active .mask {
-  visibility: visible;
-  opacity: 1; }
-
-@media screen and (min-width: 40em) {
-  .mask {
-    display: none !important;
-    opacity: 0 !important; } }
-
 /* ------------------------------------------
   NAVIGATION STYLES
 --------------------------------------------- */
@@ -359,7 +332,8 @@ header {
   color: white;
   width: 100%;
   float: left;
-  font-weight: 400;
+  font-size: 1em;
+  font-weight: 200;
   letter-spacing: 2px;
   -webkit-transition: 0.3s;
   -moz-transition: 0.3s;
@@ -446,3 +420,103 @@ header {
 #nav-icon.open span:nth-child(4) {
   width: 0%;
   left: 50%; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -o-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+  text-rendering: optimizeLegibility; }
+
+.container {
+  max-width: 400px;
+  width: 100%;
+  margin: 0 auto;
+  position: relative; }
+
+#contact input[type="text"], #contact input[type="email"], #contact input[type="tel"], #contact textarea, #contact button[type="submit"] {
+  font: 400 12px/16px "Open Sans", Helvetica, Arial, sans-serif; }
+
+#contact {
+  padding: 25px;
+  margin: 50px 0; }
+
+#contact h3 {
+  display: block;
+  font-size: 30px;
+  font-weight: 400; }
+
+#contact h4 {
+  margin: 5px 0 15px;
+  display: block;
+  font-size: 13px; }
+
+fieldset {
+  border: medium none !important;
+  margin: 0 0 10px;
+  min-width: 100%;
+  padding: 0;
+  width: 100%; }
+
+#contact input[type="text"], #contact input[type="email"], #contact input[type="tel"], #contact textarea {
+  width: 100%;
+  border: 1px solid #CCC;
+  background: #FFF;
+  margin: 0 0 5px;
+  padding: 10px; }
+
+#contact input[type="text"]:hover, #contact input[type="email"]:hover, #contact input[type="tel"]:hover, #contact textarea:hover {
+  -webkit-transition: border-color 0.3s ease-in-out;
+  -moz-transition: border-color 0.3s ease-in-out;
+  transition: border-color 0.3s ease-in-out;
+  border: 1px solid #AAA; }
+
+#contact textarea {
+  height: 100px;
+  max-width: 100%;
+  resize: none; }
+
+#contact button[type="submit"] {
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  background: #a1a1a1;
+  color: #FFF;
+  margin: 0 0 5px;
+  padding: 10px;
+  font-size: 15px; }
+
+#contact button[type="submit"]:hover {
+  background: #FFF;
+  box-shadow: inset -2px 0 0 #a1a1a1, inset 0 -2px 0 #a1a1a1, inset 2px 0 0 #a1a1a1, inset 0 2px 0 #a1a1a1;
+  color: #a1a1a1;
+  -webkit-transition: background 0.3s ease-in-out;
+  -moz-transition: background 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box; }
+
+#contact button[type="submit"]:active {
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5); }
+
+#contact input:focus, #contact textarea:focus {
+  outline: 0;
+  border: 1px solid #999; }
+
+::-webkit-input-placeholder {
+  color: #888; }
+
+:-moz-placeholder {
+  color: #888; }
+
+::-moz-placeholder {
+  color: #888; }
+
+:-ms-input-placeholder {
+  color: #888; }
