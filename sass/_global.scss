@@ -271,7 +271,15 @@ div{
 //   }
 // }
 
+.header_nav {
+  margin-right: 6em;
+}
 
+@media screen and (max-width: 40em){
+  .header_nav {
+    margin-right: 0;
+  }
+}
 
 .home_hero{
   min-height: 80vh;
@@ -624,7 +632,7 @@ header {
 @media screen and (max-width: 40em) {
   // margin-top: 0;
   header{
-    // position: absolute;
+    position: fixed;
     border-bottom: 1px solid #bbbbbb;
   }
   .logo {

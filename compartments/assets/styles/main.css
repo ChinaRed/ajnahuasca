@@ -133,6 +133,13 @@ div {
   .header_nav.open_tray {
     display: block; } }
 
+.header_nav {
+  margin-right: 6em; }
+
+@media screen and (max-width: 40em) {
+  .header_nav {
+    margin-right: 0; } }
+
 .home_hero {
   min-height: 80vh;
   min-width: 100%;
@@ -293,6 +300,7 @@ header {
 
 @media screen and (max-width: 40em) {
   header {
+    position: fixed;
     border-bottom: 1px solid #bbbbbb; }
   .logo {
     background-image: url(http://res.cloudinary.com/airship/image/upload/v1500956481/media/logo_condensed_vcjkxn.png);
