@@ -111,9 +111,6 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-div {
-  border: 1px solid red; }
-
 .content_wrapper {
   padding-left: 5.5%;
   padding-right: 5.5%;
