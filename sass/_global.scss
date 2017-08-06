@@ -738,7 +738,6 @@ header {
 // Header Nav Desktop Media Query
 .nav-collapse a {
   -webkit-tap-highlight-color: rgba(204, 204, 204, 1.0);
-  border-top: 1px solid white;
   text-decoration: none;
   // background-color: rgba(39, 40, 34, 0);
   padding: 1.7em 1.5em;
@@ -843,6 +842,9 @@ header {
     float: right;
     padding-top: 10px;
     padding-right: 20px;
+  }
+  a{
+    border-top: 1px solid white;
   }
 }
 

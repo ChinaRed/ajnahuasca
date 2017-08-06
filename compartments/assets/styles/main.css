@@ -331,7 +331,6 @@ header {
 
 .nav-collapse a {
   -webkit-tap-highlight-color: #cccccc;
-  border-top: 1px solid white;
   text-decoration: none;
   padding: 1.7em 1.5em;
   color: white;
@@ -359,7 +358,9 @@ header {
     display: inline-block;
     float: right;
     padding-top: 10px;
-    padding-right: 20px; } }
+    padding-right: 20px; }
+  a {
+    border-top: 1px solid white; } }
 
 * {
   margin: 0;
