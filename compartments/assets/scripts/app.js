@@ -3,7 +3,6 @@ $(document).ready(function(){
   $('#nav-icon').click(function(){
     $(this).toggleClass('open');
     $('.header_nav').toggleClass('open_tray');
-
   });
 // Clears Contact fields form after submit
 
@@ -15,9 +14,18 @@ $(document).ready(function(){
 });
   function clearFields(){
     console.log("wassup");
-    window.location = "/contact";
-    return false;
+    setTimeout(function() {
+      document.getElementById("contact-form").reset();
+   }, 100);
   }
+
+//   $("#message_link").click(function(){
+//    setTimeout(function() {
+//        if (some_conditions){
+//            document.getElementById("contact-form").reset();
+//        }
+//    }, 100);
+// });
 
 // $(document).ready(function () {
 
