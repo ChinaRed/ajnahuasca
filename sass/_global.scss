@@ -315,6 +315,7 @@ div{
 }
 
 .home_summary {
+  padding-bottom: 80px;
   h1, h2 {
     padding-top: 20px;
     padding-bottom: 20px;
@@ -438,15 +439,31 @@ div{
   }
 }
 
-.footer_logo_text{
-  margin-top: -30px;
-  margin-right: 20px;
-  float: right;
-  font-size: .75em;
-  display: inline-block;
-  text-decoration: none;
-  color: #bbbbbb;
-  letter-spacing: 2px;
+// Simple Footer Company Name
+// .footer_logo_text{
+//   margin-top: -30px;
+//   margin-right: 20px;
+//   float: right;
+//   font-size: .75em;
+//   display: inline-block;
+//   text-decoration: none;
+//   color: #bbbbbb;
+//   letter-spacing: 2px;
+// }
+
+.footer_logo_container {
+  height: 270px;
+  background-color: rgba(black, .9);
+}
+
+.footer_logo{
+  background-image: url(http://res.cloudinary.com/airship/image/upload/v1502083257/media/logo_jag_gljdo3.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 200px;
+  height: 245px;
+  background-position: center 25px;
+  margin: auto;
 }
 
 @media screen and (max-width: 40em) {
