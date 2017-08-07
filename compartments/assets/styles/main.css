@@ -57,7 +57,11 @@ html, body {
   height: 100%;
   font-family: "Oxygen", sans-serif;
   text-transform: none;
-  font-weight: 300; }
+  font-weight: 300;
+  -webkit-transition: .4s ease-in-out;
+  -moz-transition: .4s ease-in-out;
+  -o-transition: .4s ease-in-out;
+  transition: .4s ease-in-out; }
 
 p {
   font-size: 1.2em;
@@ -116,6 +120,11 @@ table {
   .content_wrapper {
     margin-right: 20%;
     margin-left: 20%; } }
+
+@media screen and (min-width: 20em) {
+  .content_wrapper {
+    margin-right: 10%;
+    margin-left: 10%; } }
 
 @media screen and (max-width: 40em) {
   .header_nav {
@@ -314,7 +323,13 @@ header {
 
 /* ------------------------------------------
   MASK
---------------------------------------------- */
+--------------------------------------------- 
+
+
+*/
+.toggle_mask {
+  background-color: rgba(0, 0, 0, 0.5); }
+
 /* ------------------------------------------
   NAVIGATION STYLES
 --------------------------------------------- */

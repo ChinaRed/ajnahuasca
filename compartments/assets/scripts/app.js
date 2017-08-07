@@ -3,6 +3,7 @@ $(document).ready(function(){
   $('#nav-icon').click(function(){
     $(this).toggleClass('open');
     $('.header_nav').toggleClass('open_tray');
+    $('body').toggleClass('toggle_mask');
   });
 });
 // Clears Contact fields form after submit

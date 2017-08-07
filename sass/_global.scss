@@ -53,6 +53,10 @@ footer, header, hgroup, menu, nav, section {
 html, body {
   height: 100%;
   @include font($body-font, none, 300)
+  -webkit-transition: .4s ease-in-out;
+  -moz-transition: .4s ease-in-out;
+  -o-transition: .4s ease-in-out;
+  transition: .4s ease-in-out;
 }
 
 p{
@@ -136,6 +140,13 @@ div{
   .content_wrapper{
     margin-right: 20%;
     margin-left: 20%;
+  }
+}
+
+@media screen and (min-width: 20em) {
+  .content_wrapper{
+    margin-right: 10%;
+    margin-left: 10%;
   }
 }
 
@@ -684,7 +695,13 @@ header {
 
 /* ------------------------------------------
   MASK
---------------------------------------------- */
+--------------------------------------------- 
+
+
+*/
+.toggle_mask{
+  background-color: rgba(0, 0 , 0, 0.5);
+}
 
 // #overlay {
 //   width: 100%;
