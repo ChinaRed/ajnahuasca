@@ -1,15 +1,18 @@
 <div class="wrapper">
   <div class="content_wrapper">
-    <div class="faq_headline section heading_font">
+    <div class="head_section heading_font">
       <h1>FAQ</h1>
+      <hr>
       <h2>Frequently Asked Questions</h2>
     </div>
-    {{#sort_list items sort="published_on" order="asc"}} 
-      <div class="faq_qa main_content">
-        <h2>{{fields.question}}</h2>
-        {{{fields.answer}}}
-      </div>
-    {{/sort_list}} 
+    <div class="main_content">
+      {{#sort_list items sort="published_on" order="asc"}} 
+        <div class="faq_qa main_content">
+          <h2>{{fields.question}}</h2>
+          {{{fields.answer}}}
+        </div>
+      {{/sort_list}} 
+    </div>
   </div>
 </div>
 

@@ -4,14 +4,8 @@ $(document).ready(function(){
     $(this).toggleClass('open');
     $('.header_nav').toggleClass('open_tray');
   });
-// Clears Contact fields form after submit
-
-  // $(document).ready(function () {
-  //   $('#contact_submit').click(function () {
-  //      $("input[type=text]").val('');
-  //   });
-  // });
 });
+// Clears Contact fields form after submit
   function clearFields(){
     console.log("wassup");
     setTimeout(function() {
