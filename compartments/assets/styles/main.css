@@ -121,11 +121,6 @@ table {
     margin-right: 20%;
     margin-left: 20%; } }
 
-@media screen and (min-width: 20em) {
-  .content_wrapper {
-    margin-right: 10%;
-    margin-left: 10%; } }
-
 @media screen and (max-width: 40em) {
   .header_nav {
     display: none; }

@@ -78,10 +78,6 @@ h1{
   letter-spacing: 4px;
 }
 
-// @media screen and (max-width: 40em) {
-//   font-size: 2em;
-// }
-
 h2{
   font-size: 24pt;
   line-height: 1.25em;
@@ -143,12 +139,12 @@ div{
   }
 }
 
-@media screen and (min-width: 20em) {
-  .content_wrapper{
-    margin-right: 10%;
-    margin-left: 10%;
-  }
-}
+// @media screen and (min-width: 20em) {
+//   .content_wrapper{
+//     margin-right: 10%;
+//     margin-left: 10%;
+//   }
+// }
 
 @media screen and (max-width: 40em) {
   .header_nav{
