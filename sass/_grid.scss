@@ -1,13 +1,18 @@
-    .container{
-      width: 90%;
+    .content-grid-container{
       background-color: ivory;
       text-align: center;
-      margin: 0 auto;
+    }
+    .page-header{
+      height: 200px;
+      background-color: purple;
+      padding-top: 100px;
+      padding-left: 30px;
+      text-align: left;
     }
     .grid-container{
         display: inline-block;
-        width: 70%; 
-        /* max-width: 1200px; */
+        width: 80%; 
+        text-align: center;
     }
 
     /*-- our cleafix hack -- */ 
@@ -50,7 +55,7 @@
      color: white; 
     }
     
-     @media all and (max-width:800px){
+     @media all and (max-width:100%){
         .col-1{ width: 33.33%;  }
         .col-2{ width: 50%;     }
         .col-3{ width: 83.33%;  }
@@ -67,7 +72,7 @@
         }
     }
     
-      @media all and (max-width:650px){
+      @media all and (max-width: 100%){
         .col-1{ width: 50%;     }
         .col-2{ width: 100%;    }
         .col-3{ width: 100%;    }
