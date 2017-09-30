@@ -21,12 +21,16 @@
   height: 150px;
   // padding-bottom: 75%;
   // overflow: hidden;
-  display: block;
+  // display: block;
+  background-position: center center;
   img{
-    height: 100%;
-    width: 100%;
+    // min-height: 100%;
+    // min-width: 100%;
+    width: auto;
+    height: 100% !important;
     background-size: cover;
-    background-position: center center;
+    // background-position: center center;
+    // background-repeat: no-repeat;
     // min-width: 100%;
     // background-size: cover;
     // background: no-repeat center center fixed;
