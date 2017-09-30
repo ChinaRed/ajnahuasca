@@ -5,3 +5,30 @@
 .article{
   display: block;
 }
+
+.article-list-text{
+  .article-list-date{
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .article-list-title{
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+}
+
+.thumbnail{
+  height: 150px;
+  // padding-bottom: 75%;
+  // overflow: hidden;
+  display: block;
+  img{
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: center center;
+    // min-width: 100%;
+    // background-size: cover;
+    // background: no-repeat center center fixed;
+  }
+}
