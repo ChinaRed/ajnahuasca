@@ -1,26 +1,31 @@
 .thumbnail{
-  background-color: red;
+  background-color: lightgreen;
 }
 
 .article{
-  display: block;
+  height: 115px;
+  background-color: red;
 }
 
 .article-list-text{
   .article-list-date{
-    padding-top: 20px;
+    padding-top: 10px;
+    font-size: .8em;
   }
   .article-list-title{
-    padding-top: 20px;
-
+    padding-top: 10px;
+    font-size: 1.2em;
   }
 }
 
 .thumbnail{
-  height: 115px;
+  height: 100%;
   background-position: center center;
+  overflow: hidden;
+  padding: 0;
   img{
-    width: auto;
-    height: 100% !important;
+    background-size: cover;
+    height: 100%;
+    background-position: center center;
   }
 }
