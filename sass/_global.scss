@@ -60,7 +60,7 @@ html{
 html, body {
   height: 100%;
   background-color: #f5f5f5;
-  @include font($body-font, none, 300)
+  @include font($body-font, none, 300);
   -webkit-transition: .4s ease-in-out;
   -moz-transition: .4s ease-in-out;
   -o-transition: .4s ease-in-out;
@@ -82,13 +82,17 @@ p{
 h1{
   font-size: 2.5em;
   line-height: 1.25em;
-  @include font($header-font, uppercase, 300)
+  @include font($header-font, uppercase, 300);
   letter-spacing: 4px;
 }
 
 h2{
   font-size: 24pt;
   line-height: 1.25em;
+}
+
+a{
+  @include font($nav-font,uppercase,300);
 }
 
 @media screen and (max-width: 40em) {
@@ -361,7 +365,7 @@ div{
 }
 
 /* ------------------------------------------
-  FIXED HEADER
+  FIXED HEADER NAV
 --------------------------------------------- */
 
 header {
@@ -390,8 +394,13 @@ header {
   // transition: 0.3s;
 }
 
+// li.nav-text{
+//   a{
+//     font-family: 
+//   }
+// }
+
 @media screen and (max-width: 40em) {
-  // margin-top: 0;
   header{
     position: fixed;
     border-bottom: 1px solid #bbbbbb;

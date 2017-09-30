@@ -9,30 +9,18 @@
 .article-list-text{
   .article-list-date{
     padding-top: 20px;
-    padding-bottom: 20px;
   }
   .article-list-title{
     padding-top: 20px;
-    padding-bottom: 20px;
+
   }
 }
 
 .thumbnail{
-  height: 150px;
-  // padding-bottom: 75%;
-  // overflow: hidden;
-  // display: block;
+  height: 115px;
   background-position: center center;
   img{
-    // min-height: 100%;
-    // min-width: 100%;
     width: auto;
     height: 100% !important;
-    background-size: cover;
-    // background-position: center center;
-    // background-repeat: no-repeat;
-    // min-width: 100%;
-    // background-size: cover;
-    // background: no-repeat center center fixed;
   }
 }
