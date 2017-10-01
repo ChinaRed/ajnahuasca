@@ -53,10 +53,16 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
   display: block; }
 
+html {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+
 html, body {
   height: 100%;
   background-color: #f5f5f5;
-  font-family: "Oxygen", sans-serif;
+  font-family: "PT Serif", serif;
   text-transform: none;
   font-weight: 300;
   -webkit-transition: .4s ease-in-out;
@@ -76,7 +82,7 @@ p {
 h1 {
   font-size: 2.5em;
   line-height: 1.25em;
-  font-family: "Oxygen", sans-serif;
+  font-family: "Lato", sans-serif;
   text-transform: uppercase;
   font-weight: 300;
   letter-spacing: 4px; }
@@ -85,12 +91,20 @@ h2 {
   font-size: 24pt;
   line-height: 1.25em; }
 
+a {
+  font-family: "Lato", sans-serif;
+  text-transform: uppercase;
+  font-weight: 300;
+  text-transform: none;
+  text-decoration: none;
+  color: darkgrey; }
+
 @media screen and (max-width: 40em) {
   font-size: 1.625em;
   line-height: 1.15384615em; }
 
 h2, h3, h4, h5 {
-  font-family: "Oxygen", sans-serif;
+  font-family: "Lato", sans-serif;
   text-transform: none;
   font-weight: 200;
   letter-spacing: 2px; }
@@ -137,6 +151,12 @@ table {
 @media screen and (max-width: 40em) {
   .header_nav {
     margin-right: 0; } }
+
+.show_image {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 100%; }
 
 .home_hero {
   min-height: 80vh;
@@ -275,7 +295,7 @@ table {
     display: none; } }
 
 /* ------------------------------------------
-  FIXED HEADER
+  FIXED HEADER NAV
 --------------------------------------------- */
 header {
   background: rgba(0, 0, 0, 0.8);
@@ -441,16 +461,26 @@ hr {
   width: 0%;
   left: 50%; }
 
-.container {
-  width: 90%;
-  background-color: ivory;
-  text-align: center;
-  margin: 0 auto; }
+.spacer {
+  height: 30px; }
+
+.content-grid-container {
+  background-color: white;
+  text-align: center; }
+
+.page-header {
+  height: 200px;
+  background-color: rgba(55, 25, 86, 0.9);
+  padding-top: 100px;
+  padding-left: 30px;
+  text-align: left; }
+  .page-header h1 {
+    color: white; }
 
 .grid-container {
   display: inline-block;
-  width: 70%;
-  /* max-width: 1200px; */ }
+  width: 80%;
+  text-align: left; }
 
 /*-- our cleafix hack -- */
 .row:before,
@@ -467,7 +497,6 @@ hr {
   width: 16.66%;
   /*-- our gutter -- */
   padding: 12px;
-  background-color: #FFDCDC;
   box-sizing: border-box; }
 
 .col-1 {
@@ -488,18 +517,13 @@ hr {
 .col-6 {
   width: 100%; }
 
-.outline, .outline * {
-  outline: 1px solid #F6A1A1; }
-
 /*-- some extra column content styling --*/
 [class*='col-'] > p {
-  background-color: #FFC2C2;
   padding: 0;
   margin: 0;
-  text-align: left;
-  color: white; }
+  text-align: left; }
 
-@media all and (max-width: 800px) {
+@media all and (max-width: 100%) {
   .col-1 {
     width: 33.33%; }
   .col-2 {
@@ -517,7 +541,7 @@ hr {
   .row .col-5 ~ .col-1 {
     width: 100%; } }
 
-@media all and (max-width: 650px) {
+@media all and (max-width: 100%) {
   .col-1 {
     width: 50%; }
   .col-2 {
@@ -531,6 +555,41 @@ hr {
   .col-6 {
     width: 100%; } }
 
+.article {
+  height: 115px;
+  padding: 3px;
+  border: 1px solid white; }
+  .article:hover {
+    border-bottom: 1px solid #00B5A3;
+    cursor: pointer;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s; }
+
+.article-list-text .article-list-date {
+  font-size: .8em; }
+
+.article-list-text .article-list-title {
+  padding-top: 10px;
+  font-size: 1.2em; }
+
+.center-align {
+  text-align: center; }
+
+.article-header-image {
+  height: 400px; }
+  .article-header-image h1 {
+    position: absolute;
+    text-align: left;
+    font-size: 1.5em;
+    text-transform: none;
+    top: 430px;
+    left: 140px;
+    color: white;
+    margin: 0; }
+
 * {
   margin: 0;
   padding: 0;
@@ -543,7 +602,7 @@ hr {
   font-smoothing: antialiased;
   text-rendering: optimizeLegibility; }
 
-.container {
+.contact_container {
   max-width: 400px;
   width: 100%;
   margin: 0 auto;

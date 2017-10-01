@@ -1,17 +1,25 @@
+// GUIDES FOR GRID
+// .outline, .outline *{
+//     outline: 1px solid #F6A1A1; 
+// }
+
 .spacer{
   height: 30px;
 }
 
 .content-grid-container{
-  background-color: ivory;
+  background-color: white;
   text-align: center;
 }
 .page-header{
   height: 200px;
-  background-color: purple;
+  background-color: rgba(55, 25, 86, 0.9);
   padding-top: 100px;
   padding-left: 30px;
   text-align: left;
+  h1{
+    color: white;
+  }
 }
 .grid-container{
     display: inline-block;
@@ -35,7 +43,7 @@
     width: 16.66%; 
     /*-- our gutter -- */
     padding: 12px; 
-    background-color: #FFDCDC;
+    // background-color: #FFDCDC;
     box-sizing: border-box; 
 }
 
@@ -46,17 +54,12 @@
 .col-5{ width: 83.33%; }
 .col-6{ width: 100%;   }
 
-.outline, .outline *{
-    outline: 1px solid #F6A1A1; 
-}
-
 /*-- some extra column content styling --*/
 [class*='col-'] > p {
- background-color: #FFC2C2; 
+ // background-color: #FFC2C2; 
  padding: 0;
  margin: 0;
  text-align: left; 
- color: white; 
 }
 
  @media all and (max-width:100%){

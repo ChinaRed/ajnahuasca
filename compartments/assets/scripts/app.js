@@ -24,11 +24,11 @@ $(document).ready(function(){
 
 // $(document).ready(function () {
 
-  // Logo link to home page
-  // $(".logo_container").click(function(){
-  //     window.location = $(this).find("a:first").attr("href");
-  //     return false;
-  // });
+  // Article Listing link that takes user to article detail view
+  $(".article").click(function(){
+      window.location = $(this).find("a:first").attr("href");
+      return false;
+  });
 
 //   window.addEventListener('scroll', function(e){
 //       var distanceY = window.pageYOffset || document.documentElement.scrollTop,

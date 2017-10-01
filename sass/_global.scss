@@ -93,6 +93,9 @@ h2{
 
 a{
   @include font($nav-font,uppercase,300);
+  text-transform: none;
+  text-decoration: none;
+  color: darkgrey;
 }
 
 @media screen and (max-width: 40em) {
@@ -137,7 +140,6 @@ div{
   // }
 }
 
-
 .content_wrapper{
   // top: 100px;
   // position: relative;
@@ -179,6 +181,13 @@ div{
   .header_nav {
     margin-right: 0;
   }
+}
+
+.show_image{
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 100%;
 }
 
 .home_hero{
@@ -371,6 +380,7 @@ div{
 header {
   background: rgba(black, .8);
   position: fixed;
+  // display: inline-block;
   z-index: 3;
   width: 100%;
   left: 0;
