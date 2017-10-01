@@ -1,11 +1,11 @@
 <!-- ABOUT PAGE VIEW -->
 <div class="content-grid-container">
-    {{#each fields.hero_image}}
-      <div class="article-header-image show_image" style="height: 600px; background-image: linear-gradient(rgba(0, 0, 0, 0),
-          rgba(0, 0, 0, 0.5)),url('{{url}}');">
-          <h1>{{title}}</h1>
-      </div>
-    {{/each}}
+  {{#each fields.hero_image}}
+    <div class="article-header-image show_image" style="height: 600px; background-image: linear-gradient(rgba(0, 0, 0, 0),
+        rgba(0, 0, 0, 0.5)),url('{{url}}');">
+        <h1>{{title}}</h1>
+    </div>
+  {{/each}}
   <div class="grid-container outline">
     <div class="row">
       <div class="spacer"></div>
@@ -24,6 +24,7 @@
       <div class="col-5 article-content">
         <p>{{{fields.content_2}}}</p>
       </div>
+      <div class="col-5 spacer"></div>
     </div>
   </div> 
 </div>
