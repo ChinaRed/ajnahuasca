@@ -1,7 +1,7 @@
 // GUIDES FOR GRID
-// .outline, .outline *{
-//     outline: 1px solid #F6A1A1; 
-// }
+.outline, .outline *{
+    outline: 1px solid #F6A1A1; 
+}
 
 .spacer{
   height: 30px;
@@ -11,6 +11,7 @@
   background-color: white;
   text-align: center;
 }
+
 .page-header{
   height: 200px;
   background-color: rgba(55, 25, 86, 0.9);
@@ -33,7 +34,6 @@
     content:"";
     clear:both;
     display: table;
-    text-align: center;
     margin: 0 auto;
 }
 

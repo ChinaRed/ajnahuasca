@@ -461,6 +461,9 @@ hr {
   width: 0%;
   left: 50%; }
 
+.outline, .outline * {
+  outline: 1px solid #F6A1A1; }
+
 .spacer {
   height: 30px; }
 
@@ -488,7 +491,6 @@ hr {
   content: "";
   clear: both;
   display: table;
-  text-align: center;
   margin: 0 auto; }
 
 [class*='col-'] {
