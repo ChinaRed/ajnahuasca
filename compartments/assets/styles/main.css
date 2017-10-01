@@ -581,14 +581,14 @@ hr {
 .article-header-image {
   height: 400px; }
   .article-header-image h1 {
-    position: absolute;
     text-align: left;
     font-size: 1.5em;
     text-transform: none;
-    top: 430px;
-    left: 140px;
+    padding-top: 290px;
+    padding-left: 10px;
     color: white;
-    margin: 0; }
+    margin: 0;
+    word-wrap: break; }
 
 * {
   margin: 0;

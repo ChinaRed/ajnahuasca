@@ -47,14 +47,16 @@
 .article-header-image{
   height: 400px;
   h1{
-  position: absolute;
+  // position: absolute;
   text-align: left;
   font-size: 1.5em;
   text-transform: none;
-  top: 430px;
-  left: 140px;
+  // TEXT OVER ARTICLE HERO IMAGE
+  padding-top: 290px;
+  padding-left: 10px;
   color: white;
   margin: 0;
+  word-wrap: break;
   }
 }
 // .article-header-image{
