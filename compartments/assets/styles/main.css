@@ -473,8 +473,15 @@ hr {
   width: 0%;
   left: 50%; }
 
+.outline, .outline * {
+  outline: 1px solid #F6A1A1; }
+
 .spacer {
   height: 30px; }
+
+.center-div {
+  display: inline-block;
+  float: none !important; }
 
 .content-grid-container {
   background-color: white;
@@ -491,9 +498,9 @@ hr {
     color: white; }
 
 .grid-container {
-  display: inline-block;
-  width: 80%;
-  text-align: left; }
+  max-width: 1200px;
+  display: block;
+  margin: auto; }
 
 /*-- our cleafix hack -- */
 .row:before,
@@ -509,7 +516,8 @@ hr {
   width: 16.66%;
   /*-- our gutter -- */
   padding: 12px;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  margin: 0 auto; }
 
 .col-1 {
   width: 16.66%; }
