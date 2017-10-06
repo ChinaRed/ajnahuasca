@@ -68,19 +68,20 @@ html, body {
 }
 
 p{
-  font-size: 1.2em;
+  font-size: 1em;
   line-height: 1.5em;
 }
 
 @media screen and (max-width: 40em) {
   p{
-    font-size: 1.15em;
+    font-size: 1em;
     line-height: 1.55em;
   }
 }
 
 h1{
-  font-size: 2.5em;
+  font-size: 1.5em;
+  text-align: center;
   line-height: 1.25em;
   @include font($header-font, uppercase, 300);
   letter-spacing: 4px;
