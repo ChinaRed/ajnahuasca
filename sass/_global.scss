@@ -135,10 +135,16 @@ table {
 
 // ADDS RED BORDER TO DIVS
 div{
-  // border: 1px solid red;
-  // ul li{
-  //   border: 1px solid green;
-  // }
+  border: 1px solid red;
+  ul li{
+    border: 1px solid green;
+  }
+}
+
+.base_wrapper{
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
 }
 
 .content_wrapper{
@@ -175,7 +181,7 @@ div{
 }
 
 .header_nav {
-  margin-right: 6em;
+  // margin-right: 6em;
 }
 
 @media screen and (max-width: 40em){
