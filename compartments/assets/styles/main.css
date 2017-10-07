@@ -128,11 +128,6 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-div {
-  border: 1px solid red; }
-  div ul li {
-    border: 1px solid green; }
-
 .base_wrapper {
   max-width: 1200px;
   margin: 0 auto;
@@ -176,6 +171,7 @@ div {
 .hero-video {
   height: 560px;
   margin-top: 90px;
+  max-width: 900px;
   float: none !important; }
 
 .video-container {
@@ -186,7 +182,7 @@ div {
 .video-container iframe, .video-container object, .video-container embed {
   top: 0;
   left: 0;
-  height: 520px;
+  height: 475px;
   margin-top: 90px; }
 
 .heading_font {
@@ -336,8 +332,8 @@ header {
   background-image: url(http://res.cloudinary.com/airship/image/upload/v1500956481/media/logo_fujaep.png);
   background-size: contain;
   background-repeat: no-repeat;
-  width: 195px;
-  height: 55px; }
+  width: 165px;
+  height: 40px; }
 
 @media screen and (max-width: 40em) {
   header {
@@ -345,8 +341,9 @@ header {
     border-bottom: 1px solid #bbbbbb; }
   .logo {
     background-image: url(http://res.cloudinary.com/airship/image/upload/v1500956481/media/logo_condensed_vcjkxn.png);
-    width: 180px;
-    height: 43px;
+    width: 130px;
+    height: 40px;
+    margin-top: 13px;
     border-top: 0; } }
 
 /* ------------------------------------------
@@ -380,7 +377,7 @@ header {
 .nav-collapse a {
   -webkit-tap-highlight-color: #cccccc;
   text-decoration: none;
-  padding: 1.7em 1.5em;
+  padding: 1.3em 1.5em;
   color: white;
   width: 100%;
   float: left;
