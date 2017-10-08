@@ -5,12 +5,28 @@ $(document).ready(function(){
     $('.header_nav').toggleClass('open_tray');
     $('body').toggleClass('toggle_mask');
   });
+    // Adds fade effect and waits for content to render to display content
+    $(window).bind("unload", function() {});
+    $("body").css("display", "none");
+    $("body").hide();
+    $("body").fadeIn(20);
+
+    // $('a.fade1, a.fade2, a.fade3, a.fade4').click(function(event) {
+    //     event.preventDefault();
+    //     linkLocation = this.href;
+    //     $("body").fadeOut(700, redirectPage);
+    // });
+
+    // function redirectPage() {
+    //     window.location = linkLocation;
+    // }
 });
+
 
 // Adds character limit on article summaries
 $(".listing-summary").each (function () {
-  if ($(this).text().length > 220)
-    $(this).text($(this).text().substring(0,220) + ' ...');
+  if ($(this).text().length > 210)
+    $(this).text($(this).text().substring(0,210) + '...   Read more');
 });
 
 // Clears Contact fields form after submit

@@ -70,6 +70,9 @@ html, body {
   -o-transition: .4s ease-in-out;
   transition: .4s ease-in-out; }
 
+body {
+  display: none; }
+
 p {
   font-size: 1em;
   line-height: 1.5em;
@@ -533,7 +536,7 @@ hr {
   width: 16.66%;
   text-align: left;
   /*-- our gutter -- */
-  padding: 12px;
+  padding: 10px;
   box-sizing: border-box;
   margin: 0 auto; }
 
@@ -620,7 +623,8 @@ hr {
     font-size: 1.2em; }
   .article-list-text .article-list-content {
     padding-top: 5px;
-    font-size: .8em; }
+    font-size: .8em;
+    text-overflow: ellipsis; }
 
 .article-header-image {
   height: 400px; }
