@@ -15,7 +15,7 @@
     <div class="row">
     {{#sort_list items sort="published_on" order="asc"}}
       <!-- <div class="spacer"></div> -->
-      <div class="col-3 article center-div">
+      <div class="col-4 article center-div">
         {{#each fields.hero_image}}
           <div class="col-1 show_image" style="background-image: url('{{url}}');">
         {{/each}}
@@ -24,9 +24,9 @@
           <div class="article-list-title">
             <a href="{{slug}}">{{fields.title}}</a>
           </div>
-<!--           <div class="article-list-date">
+          <div class="article-list-date">
             <p>{{format_date published_on "d" "us"}}</p>
-          </div>           -->
+          </div>          
           <div class="article-list-content listing-summary">
             <p>{{{fields.content}}}</p>
           </div>

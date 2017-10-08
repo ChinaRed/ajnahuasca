@@ -26,11 +26,11 @@
       <div class="col-4 center-div">
         <h1>{{fields.headline_2}}</h1>
       </div>
-      <div class="col-3 center-div bottom-border"></div>
+      <div class="col-4 center-div bottom-border"></div>
       <div class="spacer"></div>
       {{#each related_items.featured_articles}}
         <div class="row">
-          <div class="col-3 center-div article">
+          <div class="col-4 center-div article">
             {{#each fields.hero_image}}
               <div class="col-1 show_image" style="background-image: url('{{url}}');">
             {{/each}}
@@ -47,6 +47,7 @@
               </div>
             </div> 
           </div> <!-- article -->
+          <div class="spacer"></div>
         </div> 
       {{/each}}
       <div class="spacer"></div>
