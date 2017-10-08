@@ -24,8 +24,11 @@
           <div class="article-list-title">
             <a href="{{slug}}">{{fields.title}}</a>
           </div>
-          <div class="article-list-date">
+<!--           <div class="article-list-date">
             <p>{{format_date published_on "d" "us"}}</p>
+          </div>           -->
+          <div class="article-list-content listing-summary">
+            <p>{{{fields.content}}}</p>
           </div>
         </div> 
       </div> <!-- article -->

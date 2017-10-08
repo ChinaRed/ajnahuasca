@@ -6,13 +6,20 @@ $(document).ready(function(){
     $('body').toggleClass('toggle_mask');
   });
 });
+
+// Adds character limit on article summaries
+$(".listing-summary").each (function () {
+  if ($(this).text().length > 220)
+    $(this).text($(this).text().substring(0,220) + ' ...');
+});
+
 // Clears Contact fields form after submit
   function clearFields(){
-    console.log("wassup");
     setTimeout(function() {
       document.getElementById("contact-form").reset();
    }, 100);
   }
+
 
 // $(function() {
 
@@ -59,6 +66,7 @@ $(document).ready(function(){
       window.location = $(this).find("a:first").attr("href");
       return false;
   });
+
 
 //   window.addEventListener('scroll', function(e){
 //       var distanceY = window.pageYOffset || document.documentElement.scrollTop,

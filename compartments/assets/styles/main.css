@@ -616,7 +616,11 @@ hr {
   padding-top: 0;
   padding-left: 30px; }
   .article-list-text .article-list-date {
-    padding-top: 10px;
+    font-size: .8em; }
+  .article-list-text .article-list-title {
+    font-size: 1.2em; }
+  .article-list-text .article-list-content {
+    padding-top: 5px;
     font-size: .8em; }
 
 .article-header-image {
