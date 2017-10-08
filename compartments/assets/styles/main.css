@@ -98,7 +98,8 @@ a {
   font-weight: 300;
   text-transform: none;
   text-decoration: none;
-  color: darkgrey; }
+  color: black;
+  font-size: 1em; }
 
 @media screen and (max-width: 40em) {
   font-size: 1.625em;
@@ -481,9 +482,6 @@ hr {
   width: 0%;
   left: 50%; }
 
-.outline, .outline * {
-  outline: 1px solid #F6A1A1; }
-
 .spacer {
   height: 30px; }
 
@@ -589,23 +587,24 @@ hr {
 
 .article {
   height: 115px;
-  padding: 3px;
-  border: 1px solid white; }
+  padding: 5px 0; }
   .article:hover {
-    border-bottom: 1px solid #00B5A3;
     cursor: pointer;
     -webkit-transition: 0.3s;
     -moz-transition: 0.3s;
     -ms-transition: 0.3s;
     -o-transition: 0.3s;
     transition: 0.3s; }
+    .article:hover a {
+      text-decoration: underline;
+      color: #00B5A3; }
 
-.article-list-text .article-list-date {
-  font-size: .8em; }
-
-.article-list-text .article-list-title {
-  padding-top: 10px;
-  font-size: 1.2em; }
+.article-list-text {
+  padding-top: 0;
+  padding-left: 30px; }
+  .article-list-text .article-list-date {
+    padding-top: 10px;
+    font-size: .8em; }
 
 .article-header-image {
   height: 400px; }

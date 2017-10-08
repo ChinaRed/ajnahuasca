@@ -7,10 +7,10 @@
 
 .article{
   height: 115px;
-  padding: 3px;
-  border: 1px solid white;
+  padding: 5px 0;
+  // border: 1px solid white;
   &:hover{
-    border-bottom: 1px solid #00B5A3;
+    // border-bottom: 1px solid #00B5A3;
     // border-top: 1px solid #00B5A3;
     // box-shadow: 1px 1px 1px 1px #00B5A3;
     cursor: pointer;
@@ -19,17 +19,23 @@
     -ms-transition: 0.3s;
     -o-transition: 0.3s;
     transition: 0.3s;
+    a{
+      text-decoration: underline;
+      color: #00B5A3;
+    }
   }
 }
 
 .article-list-text{
+  padding-top: 0;
+  padding-left: 30px;
   .article-list-date{
-    // padding-top: 10px;
+    padding-top: 10px;
     font-size: .8em;
   }
   .article-list-title{
-    padding-top: 10px;
-    font-size: 1.2em;
+    // padding-top: 10px;
+    // font-size: 1.2em;
   }
 }
 

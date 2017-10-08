@@ -72,6 +72,7 @@ p{
   line-height: 1.5em;
 }
 
+// LARGE MEDIA QUERY
 @media screen and (max-width: 40em) {
   p{
     font-size: 1em;
@@ -96,7 +97,8 @@ a{
   @include font($nav-font,uppercase,300);
   text-transform: none;
   text-decoration: none;
-  color: darkgrey;
+  color: black;
+  font-size: 1em;
 }
 
 @media screen and (max-width: 40em) {

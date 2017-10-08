@@ -20,23 +20,24 @@
         <p>{{{fields.home_summary}}}</p>
       </div>
       <div class="col-6 spacer"></div>
+      <div class="col-6 spacer"></div>
       <div class="col-4 center-div">
         <h1>{{fields.headline_2}}</h1>
       </div>
       <div class="col-6 spacer"></div>
       {{#each related_items.featured_articles}}
         <div class="row">
-          <div class="col-4 center-div article">
+          <div class="col-3 center-div article">
             {{#each fields.hero_image}}
               <div class="col-1 show_image" style="background-image: url('{{url}}');">
             {{/each}}
             </div> 
             <div class="col-5 article-list-text">
-              <div class="article-list-date">
-                <p>{{format_date published_on "d" "us"}}</p>
-              </div>
               <div class="article-list-title">
                 <a href="{{slug}}">{{fields.title}}</a>
+              </div>
+              <div class="article-list-date">
+                <p>{{format_date published_on "d" "us"}}</p>
               </div>
             </div> 
           </div> <!-- article -->
