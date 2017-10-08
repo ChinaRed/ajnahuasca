@@ -485,6 +485,9 @@ hr {
   width: 0%;
   left: 50%; }
 
+.outline, .outline * {
+  outline: 1px solid #F6A1A1; }
+
 .spacer {
   height: 30px; }
 
@@ -493,6 +496,7 @@ hr {
   float: none !important; }
 
 .content-grid-container {
+  background-color: white;
   text-align: center;
   display: block; }
 

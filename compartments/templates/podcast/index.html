@@ -1,4 +1,4 @@
-<!-- BLOG LISTING PAGE -->
+<!-- PODCAST LISTING PAGE -->
 <div class="content-grid-container">
   <div class="spacer"></div>
   <div class="spacer"></div>
@@ -7,7 +7,7 @@
   <div class="spacer"></div>
   <div class="grid-container outline">
     <div class="col-4 article_list_header center-div">
-      <h1>Latest Articles</h1>
+      <h1>Latest Podcasts</h1>
     </div>
     <div class="col-4 center-div bottom-border"></div>
     <div class="spacer"></div>
@@ -15,18 +15,9 @@
     <div class="row">
     {{#sort_list items sort="published_on" order="asc"}}
       <!-- <div class="spacer"></div> -->
-      <div class="col-3 article center-div">
-        {{#each fields.hero_image}}
-          <div class="col-1 show_image" style="background-image: url('{{url}}');">
-        {{/each}}
-        </div> 
-        <div class="col-5 article-list-text">
-          <div class="article-list-title">
-            <a href="{{slug}}">{{fields.title}}</a>
-          </div>
-          <div class="article-list-date">
-            <p>{{format_date published_on "d" "us"}}</p>
-          </div>
+      <div class="col-4 article center-div">
+        <div class="col-6">
+          <iframe width="100%" height="120" scrolling="no" frameborder="no" src="{{fields.embed_code}}"></iframe>
         </div> 
       </div> <!-- article -->
     {{/sort_list}}
@@ -36,3 +27,4 @@
     <div class="spacer"></div>
   </div> <!-- grid-container -->
 </div>
+
