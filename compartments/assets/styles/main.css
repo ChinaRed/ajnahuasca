@@ -129,6 +129,9 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+.bottom-border {
+  border-bottom: 1px solid #00B5A3; }
+
 .base_wrapper {
   max-width: 1200px;
   margin: 0 auto;
@@ -581,7 +584,6 @@ hr {
     width: 100%; } }
 
 .article_list_header {
-  border-bottom: 1px solid #00B5A3;
   padding-left: 0;
   padding-bottom: 10px; }
 
