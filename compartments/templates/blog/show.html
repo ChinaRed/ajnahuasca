@@ -14,10 +14,10 @@
       {{/each}} -->
       <div class="col-6 spacer"></div>
       <div class="col-4 center-div">
-        <h3>{{fields.title}}</h3>
+        <h2>{{fields.title}}</h2>
       </div>
-      <div class="col-4 center-div">
-        <p>{{format_date published_on "d" "us"}}</p>
+      <div class="col-4 center-div" style="font-style: italic;">
+        <p>Published {{format_date published_on "d" "us"}}</p>
       </div>
       <div class="col-4 center-div center-image">
         <p>{{{fields.content}}}</p>

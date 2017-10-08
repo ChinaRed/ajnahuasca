@@ -72,7 +72,8 @@ html, body {
 
 p {
   font-size: 1em;
-  line-height: 1.5em; }
+  line-height: 1.5em;
+  color: #333333; }
 
 @media screen and (max-width: 40em) {
   p {
@@ -86,7 +87,8 @@ h1 {
   font-family: "Lato", sans-serif;
   text-transform: uppercase;
   font-weight: 300;
-  letter-spacing: 4px; }
+  letter-spacing: 4px;
+  color: #222222; }
 
 h2 {
   font-size: 24pt;
@@ -98,7 +100,7 @@ a {
   font-weight: 300;
   text-transform: none;
   text-decoration: none;
-  color: black;
+  color: #00B5A3;
   font-size: 1em; }
 
 @media screen and (max-width: 40em) {
@@ -591,6 +593,8 @@ hr {
 .article {
   height: 115px;
   padding: 5px 0; }
+  .article a {
+    color: #333333; }
   .article:hover {
     cursor: pointer;
     -webkit-transition: 0.3s;

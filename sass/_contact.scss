@@ -54,14 +54,14 @@
   -webkit-transition:border-color 0.3s ease-in-out;
   -moz-transition:border-color 0.3s ease-in-out;
   transition:border-color 0.3s ease-in-out;
-  border:1px solid #00B5A3;
+  border:1px solid $link-color;
 }
 
 .text_area input[type="text"]:hover {
   -webkit-transition:border-color 0.3s ease-in-out;
   -moz-transition:border-color 0.3s ease-in-out;
   transition:border-color 0.3s ease-in-out;
-  border:1px solid #00B5A3;
+  border:1px solid $link-color;
 }
 
 .fieldset textarea {
@@ -74,7 +74,7 @@
   cursor:pointer;
   width:100%;
   border:none;
-  background:#00B5A3;
+  background:$link-color;
   color:#FFF;
   margin:0 0 5px;
   padding:10px;
@@ -83,9 +83,9 @@
 
 .fieldset button[type="submit"]:hover {
   background:#FFF;
-  // border: 2px solid #00B5A3;
-    box-shadow: inset -2px 0 0 #00B5A3, inset 0 -2px 0 #00B5A3, inset 2px 0 0 #00B5A3, inset 0 2px 0 #00B5A3;
-  color: #00B5A3;
+  // border: 2px solid $link-color;
+    box-shadow: inset -2px 0 0 $link-color, inset 0 -2px 0 $link-color, inset 2px 0 0 $link-color, inset 0 2px 0 $link-color;
+  color: $link-color;
   -webkit-transition:background 0.3s ease-in-out;
   -moz-transition:background 0.3s ease-in-out;
   transition:background-color 0.3s ease-in-out;
