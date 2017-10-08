@@ -485,9 +485,6 @@ hr {
   width: 0%;
   left: 50%; }
 
-.outline, .outline * {
-  outline: 1px solid #F6A1A1; }
-
 .spacer {
   height: 30px; }
 
