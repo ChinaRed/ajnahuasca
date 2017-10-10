@@ -72,24 +72,19 @@ body{
 }
 
 p{
-  font-size: 1em;
-  line-height: 1.5em;
+  font-size: 16px;
+  line-height: 24px;
   color: $content-font-color;
+  font-weight: 400;
 }
 
 // LARGE MEDIA QUERY
-@media screen and (max-width: 40em) {
-  p{
-    font-size: 1em;
-    line-height: 1.55em;
-  }
-}
 
 h1{
   font-size: 1.5em;
   text-align: center;
   line-height: 1.25em;
-  @include font($header-font, uppercase, 300);
+  @include font($header-font, uppercase, 600);
   letter-spacing: 4px;
   color: $header-font-color;
 }
@@ -105,6 +100,7 @@ a{
   text-decoration: none;
   color: $link-color;
   font-size: 1em;
+  font-weight: 600;
 }
 
 @media screen and (max-width: 40em) {
@@ -466,12 +462,6 @@ header {
   // transition: 0.3s;
 }
 
-// li.nav-text{
-//   a{
-//     font-family: 
-//   }
-// }
-
 @media screen and (max-width: 40em) {
   header{
     position: fixed;
@@ -547,7 +537,7 @@ header {
   width: 100%;
   float: left;
   font-size: 1em;
-  font-weight: 200;
+  font-weight: 600;
   letter-spacing: 2px;
   -webkit-transition: 0.3s;
   -moz-transition: 0.3s;
