@@ -327,7 +327,7 @@ header {
   width: 100%;
   float: left;
   font-size: 1em;
-  font-weight: 600;
+  font-weight: 500;
   letter-spacing: 2px;
   -webkit-transition: 0.3s;
   -moz-transition: 0.3s;
@@ -427,6 +427,7 @@ hr {
   left: 50%; }
 
 .footer_nav_container {
+  border-bottom: 1px solid #bbbbbb;
   background-color: rgba(0, 0, 0, 0.8);
   -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.49);
   -moz-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.49);
@@ -446,7 +447,7 @@ hr {
   padding: 15px;
   font-size: .75em;
   display: block;
-  -webkit-tap-highlight-color: transparent;
+  -webkit-tap-highlight-color: #646464;
   text-decoration: none;
   background-color: rgba(39, 40, 34, 0);
   color: #bbbbbb;
@@ -461,10 +462,11 @@ hr {
 
 .footer_logo_container {
   height: 270px;
-  background-color: rgba(0, 0, 0, 0.9); }
+  background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.35)), url(https://res.cloudinary.com/airship/image/upload/f_auto/v1507790265/media/jungle_pdr3rf.jpg);
+  background-size: cover; }
 
 .footer_logo {
-  background-image: url(http://res.cloudinary.com/airship/image/upload/v1502083257/media/logo_jag_gljdo3.png);
+  background-image: url(https://res.cloudinary.com/airship/image/upload/f_auto/v1500956481/media/logo_fujaep.png);
   background-size: contain;
   background-repeat: no-repeat;
   width: 200px;
@@ -475,9 +477,6 @@ hr {
 @media screen and (max-width: 40em) {
   .footer_logo_text {
     display: none; } }
-
-.outline, .outline * {
-  outline: 1px solid #F6A1A1; }
 
 .spacer {
   height: 30px; }
