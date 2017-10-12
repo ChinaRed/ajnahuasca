@@ -6,10 +6,10 @@ $(document).ready(function(){
     $('body').toggleClass('toggle_mask');
   });
     // Adds fade effect and waits for content to render to display content
-    $(window).bind("unload", function() {});
-    $("body").css("display", "none");
-    $("body").hide();
-    $("body").fadeIn(20);
+    // $(window).bind("unload", function() {});
+    // $("body").css("display", "none");
+    // $("body").hide();
+    // $("body").fadeIn(20);
 
     // $('a.fade1, a.fade2, a.fade3, a.fade4').click(function(event) {
     //     event.preventDefault();

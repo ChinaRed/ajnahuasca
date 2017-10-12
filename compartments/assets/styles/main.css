@@ -70,9 +70,6 @@ html, body {
   -o-transition: .4s ease-in-out;
   transition: .4s ease-in-out; }
 
-body {
-  display: none; }
-
 p {
   font-size: 16px;
   line-height: 24px;
@@ -359,7 +356,7 @@ hr {
     padding-top: 14px;
     padding-right: 20px; }
   a {
-    border-top: 1px solid white; } }
+    border-top: .5px solid white; } }
 
 * {
   margin: 0;
@@ -591,6 +588,8 @@ hr {
     height: 100%;
     margin: auto;
     text-align: center; }
+  .spacer {
+    height: 15px; }
   .article .article-list-text {
     padding: 0; }
   .article .show_image {

@@ -38,20 +38,11 @@ header {
     border-bottom: 1px solid #bbbbbb;
   }
   .logo {
-    // display: none !important;
     background-image: url(http://res.cloudinary.com/airship/image/upload/v1500956481/media/logo_condensed_vcjkxn.png);
     width: 130px;
     height: 40px;
     margin-top: 13px;
     border-top: 0;
-    // margin-top: 10px;
-    // margin-left: 15px;
-    // -webkit-transition: 0.3s;
-    // -moz-transition: 0.3s;
-    // -ms-transition: 0.3s;
-    // -o-transition: 0.3s;
-    // transition: 0.3s;
-    // opacity: 0 !important;
   }
 }
 
@@ -146,7 +137,7 @@ hr {
 
   }
   a{
-    border-top: 1px solid white;
+    border-top: .5px solid white;
   }
 }
 * {
