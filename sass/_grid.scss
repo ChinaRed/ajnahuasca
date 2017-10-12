@@ -1,7 +1,7 @@
 // GUIDES FOR GRID
-// .outline, .outline *{
-//     outline: 1px solid #F6A1A1; 
-// }
+.outline, .outline *{
+    outline: 1px solid #F6A1A1; 
+}
 
 .spacer{
   height: 30px;
@@ -10,6 +10,7 @@
 .center-div{
   display: inline-block;
   float: none !important;
+  padding: 0;
 }
 
 .content-grid-container{
@@ -66,6 +67,8 @@
 .col-5{ width: 83.33%; }
 .col-6{ width: 100%;   }
 
+
+
 // iPad media querie 650px - 800px
 @media all and (max-width:800px){
   .col-1{ width: 25%;  }
@@ -92,6 +95,8 @@
   }
 }
 
+
+
 // Mobile media QUERIES
 @media all and (max-width: 650px){
   .col-1{ width: 100%;     }
@@ -100,12 +105,19 @@
   .col-4{ width: 100%;    }
   .col-5{ width: 100%;    }
   .col-6{ width: 100%;    }
-
+  
+  header{
+    background-color: rgba( 100, 100, 100, .2);
+    li{
+      background-color: rgba(0, 0, 0, .7);
+    }
+  }
+  
   img{
     max-width: 393px;
     height: 100%;
     margin: auto;
     text-align: center;
   }
-  
+
 }
