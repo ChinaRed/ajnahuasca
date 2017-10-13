@@ -90,8 +90,14 @@ h1 {
   color: #222222; }
 
 h2 {
-  font-size: 24pt;
-  line-height: 1.25em; }
+  font-size: 1.2em;
+  line-height: 1.25em;
+  font-weight: 600; }
+
+h3 {
+  color: #00B5A3;
+  font-size: .8em;
+  font-weight: 500; }
 
 a {
   font-family: "raleway", sans-serif;
@@ -110,7 +116,7 @@ a {
 h2, h3, h4, h5 {
   font-family: "raleway", sans-serif;
   text-transform: none;
-  font-weight: 200;
+  font-weight: none;
   letter-spacing: 2px; }
 
 ol, ul {
@@ -181,7 +187,7 @@ img {
 .video-container iframe, .video-container object, .video-container embed {
   top: 0;
   left: 0;
-  height: 380px;
+  height: 300px;
   margin-top: 90px; }
 
 .heading_font {
@@ -223,14 +229,6 @@ img {
     padding-bottom: 15px;
     line-height: 1.5;
     text-align: left; }
-
-.faq_qa h2 {
-  font-weight: 600;
-  font-size: 1.2em;
-  line-height: 1.5; }
-
-.faq_qa p {
-  font-size: 1em; }
 
 .reach_out_form_container {
   width: 50%;
@@ -627,10 +625,10 @@ hr {
 
 .article-list-text {
   padding-left: 15px; }
-  .article-list-text .article-list-date {
-    font-size: .8em; }
+  .article-list-text .article-list-date p {
+    color: #00B5A3; }
   .article-list-text .article-list-title {
-    font-size: 1.2em; }
+    font-size: 1.1em; }
   .article-list-text .article-list-content {
     padding-top: 5px;
     font-size: .8em;

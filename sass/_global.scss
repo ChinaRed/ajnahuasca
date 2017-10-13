@@ -90,8 +90,15 @@ h1{
 }
 
 h2{
-  font-size: 24pt;
+  font-size: 1.2em;
   line-height: 1.25em;
+  font-weight: 600;
+}
+
+h3{
+  color: #00B5A3;
+  font-size: .8em;
+  font-weight: 500;
 }
 
 a{
@@ -109,7 +116,7 @@ a{
 }
 
 h2, h3, h4, h5{
-  @include font($header-font, none, 200)
+  @include font($header-font, none, none)
   letter-spacing: 2px;
 }
 
@@ -216,7 +223,7 @@ img{
 .video-container iframe, .video-container object, .video-container embed {
   top:0;
   left:0;
-  height: 380px;
+  height: 300px;
   margin-top: 90px;
 }
 
@@ -224,7 +231,6 @@ img{
   text-align: center;
   h1{
     // font-size: 1.7em;
-    // font-size: 16px;
     // font-weight: 200;
     padding-bottom: 15px;
   }
@@ -284,16 +290,16 @@ img{
 //   }
 // }
 
-.faq_qa{
-  h2{
-    font-weight: 600;
-    font-size: 1.2em;
-    line-height: 1.5;
-  }
-  p{
-    font-size: 1em;
-  }
-}
+// .faq_qa{
+//   h2{
+//     font-weight: 600;
+//     font-size: 1.2em;
+//     line-height: 1.5;
+//   }
+//   p{
+//     font-size: 1em;
+//   }
+// }
 
 .reach_out_form_container{
   width: 50%;
