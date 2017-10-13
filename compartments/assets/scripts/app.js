@@ -6,28 +6,33 @@ $(document).ready(function(){
     $('body').toggleClass('toggle_mask');
   });
     // Adds fade effect and waits for content to render to display content
-    // $(window).bind("unload", function() {});
-    // $("body").css("display", "none");
-    // $("body").hide();
-    // $("body").fadeIn(20);
+    $(window).bind("unload", function() {});
+    $("body").css("display", "none");
+    $("body").hide();
+    $("body").fadeIn(20);
 
-    // $('a.fade1, a.fade2, a.fade3, a.fade4').click(function(event) {
-    //     event.preventDefault();
-    //     linkLocation = this.href;
-    //     $("body").fadeOut(700, redirectPage);
-    // });
+    $('a').click(function(event) {
+        event.preventDefault();
+        linkLocation = this.href;
+        $("body").fadeOut(20, redirectPage);
+    });
 
-    // function redirectPage() {
-    //     window.location = linkLocation;
-    // }
+    function redirectPage() {
+        window.location = linkLocation;
+    }
 });
-
 
 // Adds character limit on article summaries
 $(".listing-summary").each (function () {
   if ($(this).text().length > 210)
     $(this).text($(this).text().substring(0,210) + '...   Read more');
 });
+
+  // Article Listing link that takes user to article detail view
+  $(".article").click(function(){
+      window.location = $(this).find("a:first").attr("href");
+      return false;
+  });
 
 // Clears Contact fields form after submit
   function clearFields(){
@@ -76,13 +81,6 @@ $(".listing-summary").each (function () {
 // });
 
 // $(document).ready(function () {
-
-  // Article Listing link that takes user to article detail view
-  $(".article").click(function(){
-      window.location = $(this).find("a:first").attr("href");
-      return false;
-  });
-
 
 //   window.addEventListener('scroll', function(e){
 //       var distanceY = window.pageYOffset || document.documentElement.scrollTop,

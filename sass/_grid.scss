@@ -135,6 +135,9 @@
   }
   
   .article{
+    a{
+      color: $link-color !important;
+    }
     .article-list-text{
       padding: 0;
     }
