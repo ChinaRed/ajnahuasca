@@ -156,6 +156,10 @@ table {
   background-position: center center;
   height: 105px; }
 
+img {
+  height: 100%;
+  width: 100%; }
+
 .video-background-image {
   background-repeat: no-repeat;
   background-size: cover;
@@ -298,7 +302,6 @@ table {
   width: 16.66%;
   text-align: left;
   /*-- our gutter -- */
-  padding: 10px;
   box-sizing: border-box;
   margin: 0 auto; }
 
@@ -338,7 +341,7 @@ table {
   .row .col-5 ~ .col-1 {
     width: 100%; }
   .grid-container {
-    width: 97%; }
+    width: 95%; }
   .article {
     display: inline-flex; }
     .article a {
@@ -375,9 +378,13 @@ table {
   .article a {
     color: #00B5A3 !important; }
   .article .article-list-text {
-    padding: 0; }
+    padding-top: 0;
+    padding-left: 10; }
+  .article .article-list-content {
+    display: none; }
   .article .show_image {
-    display: none; } }
+    width: 70px;
+    height: 70px; } }
 
 /* ------------------------------------------
   FIXED HEADER NAV
@@ -569,7 +576,7 @@ hr {
   padding: 15px;
   font-size: .75em;
   display: block;
-  -webkit-tap-highlight-color: #646464;
+  -webkit-tap-highlight-color: rgba(100, 100, 100, 0.9);
   text-decoration: none;
   background-color: rgba(39, 40, 34, 0);
   color: #bbbbbb;
@@ -619,7 +626,6 @@ hr {
     color: #00B5A3; }
 
 .article-list-text {
-  padding-top: 0;
   padding-left: 15px; }
   .article-list-text .article-list-date {
     font-size: .8em; }

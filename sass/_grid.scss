@@ -53,7 +53,9 @@
     width: 16.66%; 
     text-align: left;
     /*-- our gutter -- */
-    padding: 10px; 
+    // padding: 10px;
+    // padding-left: 10px;
+    // padding-right: 10px; 
     box-sizing: border-box; 
     margin: 0 auto;
 }
@@ -87,7 +89,7 @@
   }
   
   .grid-container{
-    width: 97%;
+    width: 95%;
   }
   // Lines up content inline inside article tag
   .article {
@@ -139,10 +141,19 @@
       color: $link-color !important;
     }
     .article-list-text{
-      padding: 0;
+      padding-top: 0;
+      padding-left: 10;
     }
-    .show_image{
+    .article-list-date{
+      // display: none;
+    }    
+    .article-list-content{
       display: none;
+    }
+
+    .show_image{
+      width: 70px;
+      height: 70px;
     }
   }
 
