@@ -121,6 +121,10 @@
     }
   }
   
+   .grid-container{
+    width: 93%;
+  }
+
   .video-container iframe{
     height: 228px;
   }
@@ -133,12 +137,12 @@
   }
   
   .spacer{
-    height: 15px;
+    height: 20px;
   }
   
   .article{
     a{
-      color: $link-color !important;
+      // color: $link-color !important;
     }
     .article-list-text{
       padding-top: 0;
@@ -155,6 +159,15 @@
       width: 70px;
       height: 70px;
     }
+  }
+
+  //CONTACT PAGE
+  .contact_container{
+    padding-right: 0 !important;
+  }
+
+  .article-header-image{
+    height: 200px !important;
   }
 
 }
