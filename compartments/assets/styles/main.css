@@ -71,7 +71,10 @@ html, body {
   transition: .4s ease-in-out; }
 
 body {
-  display: none; }
+  display: none;
+  overflow-y: scroll;
+  /* has to be scroll, not auto */
+  -webkit-overflow-scrolling: touch; }
 
 p {
   font-size: 16px;
