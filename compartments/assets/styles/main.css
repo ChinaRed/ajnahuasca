@@ -386,7 +386,12 @@ img {
   .contact_container {
     padding-right: 0 !important; }
   .article-header-image {
-    height: 200px !important; } }
+    height: 200px !important; }
+  .footer_nav_inline ul {
+    display: block !important; }
+    .footer_nav_inline ul li {
+      display: block !important;
+      text-align: left; } }
 
 /* ------------------------------------------
   FIXED HEADER NAV
