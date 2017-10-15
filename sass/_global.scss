@@ -83,7 +83,7 @@ p{
 // LARGE MEDIA QUERY
 
 h1{
-  font-size: 1.5em;
+  font-size: 1.75em;
   text-align: center;
   line-height: 1.25em;
   @include font($header-font, uppercase, 600);
@@ -100,6 +100,11 @@ h2{
 h3{
   color: #00B5A3;
   font-size: .8em;
+  font-weight: 500;
+}
+
+span{
+  font-size: .9em;
   font-weight: 500;
 }
 
@@ -205,13 +210,13 @@ img{
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-  height: 660px;
+  height: 700px;
   margin-top: -615px;
 }
 
 .hero-video{
   height: 560px;
-  margin-top: 90px;
+  // margin-top: 130px;
   max-width: 900px;
   float: none !important;
 }
@@ -226,7 +231,7 @@ img{
   top:0;
   left:0;
   height: 300px;
-  margin-top: 90px;
+  margin-top: 120px;
 }
 
 .heading_font{

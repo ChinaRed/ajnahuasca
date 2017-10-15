@@ -83,7 +83,7 @@ p {
   font-weight: 400; }
 
 h1 {
-  font-size: 1.5em;
+  font-size: 1.75em;
   text-align: center;
   line-height: 1.25em;
   font-family: "raleway", sans-serif;
@@ -100,6 +100,10 @@ h2 {
 h3 {
   color: #00B5A3;
   font-size: .8em;
+  font-weight: 500; }
+
+span {
+  font-size: .9em;
   font-weight: 500; }
 
 a {
@@ -173,12 +177,11 @@ img {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-  height: 660px;
+  height: 700px;
   margin-top: -615px; }
 
 .hero-video {
   height: 560px;
-  margin-top: 90px;
   max-width: 900px;
   float: none !important; }
 
@@ -191,7 +194,7 @@ img {
   top: 0;
   left: 0;
   height: 300px;
-  margin-top: 90px; }
+  margin-top: 120px; }
 
 .heading_font {
   text-align: center; }
@@ -637,8 +640,10 @@ hr {
 
 .article-list-text {
   padding-left: 12.5px; }
-  .article-list-text .article-list-date p {
-    color: #00B5A3; }
+  .article-list-text .article-list-date {
+    padding-top: 3px; }
+    .article-list-text .article-list-date p {
+      color: #00B5A3; }
   .article-list-text .article-list-title {
     font-size: 1.1em; }
   .article-list-text .article-list-content {
