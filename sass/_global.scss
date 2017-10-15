@@ -98,10 +98,16 @@ h2{
 }
 
 h3{
+  font-size: .8em;
+  font-weight: 500;
+}
+
+h4{
   color: #00B5A3;
   font-size: .8em;
   font-weight: 500;
 }
+
 
 span{
   font-size: .9em;
@@ -169,13 +175,7 @@ div{
   text-align: center;
 }
 
-.content_wrapper{
-  // top: 100px;
-  // position: relative;
-  padding-top: 20px;
-  padding-bottom: 120px;
-  background-color: #fff;
-}
+
 
 // Sets mobile nav header
 @media screen and (max-width: 40em) {

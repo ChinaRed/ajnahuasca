@@ -98,6 +98,10 @@ h2 {
   font-weight: 600; }
 
 h3 {
+  font-size: .8em;
+  font-weight: 500; }
+
+h4 {
   color: #00B5A3;
   font-size: .8em;
   font-weight: 500; }
@@ -151,11 +155,6 @@ table {
   max-width: 1200px;
   margin: 0 auto;
   text-align: center; }
-
-.content_wrapper {
-  padding-top: 20px;
-  padding-bottom: 120px;
-  background-color: #fff; }
 
 @media screen and (max-width: 40em) {
   .header_nav {
