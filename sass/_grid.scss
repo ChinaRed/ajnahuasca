@@ -101,7 +101,19 @@
   iframe{
     width: 100%;
   }
+  
+// MOBILE FOOTER DISPLAY LIST
+  .footer_nav_inline{
+    ul {
+      display: block !important;
+      li{
+        display: block !important;
+        text-align: left;
+      }
+    }
+  }
 }
+
 
 
 
@@ -119,6 +131,10 @@
     li{
       background-color: rgba(0, 0, 0, .7);
     }
+  }
+
+  .social-icons{
+    display: none;
   }
   
    .grid-container{
@@ -168,16 +184,5 @@
 
   .article-header-image{
     height: 200px !important;
-  }
-
-  // MOBILE FOOTER DISPLAY LIST
-  .footer_nav_inline{
-    ul {
-      display: block !important;
-      li{
-        display: block !important;
-        text-align: left;
-      }
-    }
   }
 }
