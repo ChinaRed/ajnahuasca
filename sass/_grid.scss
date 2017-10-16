@@ -88,6 +88,10 @@
       width: 100%; 
   }
   
+  .social-icons{
+    display: none;
+  }
+  
   .grid-container{
     width: 95%;
   }
@@ -101,7 +105,7 @@
   iframe{
     width: 100%;
   }
-  
+
 // MOBILE FOOTER DISPLAY LIST
   .footer_nav_inline{
     ul {
@@ -131,10 +135,6 @@
     li{
       background-color: rgba(0, 0, 0, .7);
     }
-  }
-
-  .social-icons{
-    display: none;
   }
   
    .grid-container{

@@ -156,12 +156,6 @@ table {
   margin: 0 auto;
   text-align: center; }
 
-@media screen and (max-width: 40em) {
-  .header_nav {
-    display: none; }
-  .header_nav.open_tray {
-    display: block; } }
-
 .show_image {
   background-repeat: no-repeat;
   background-size: cover;
@@ -343,6 +337,8 @@ img {
     width: 100%; }
   .row .col-5 ~ .col-1 {
     width: 100%; }
+  .social-icons {
+    display: none; }
   .grid-container {
     width: 95%; }
   .article {
@@ -374,8 +370,6 @@ img {
     background-color: rgba(100, 100, 100, 0.2); }
     header li {
       background-color: rgba(0, 0, 0, 0.7); }
-  .social-icons {
-    display: none; }
   .grid-container {
     width: 93%; }
   .video-container iframe {
@@ -447,7 +441,7 @@ header {
   width: 133px;
   height: 40px; }
 
-@media screen and (max-width: 40em) {
+@media screen and (max-width: 775px) {
   header {
     position: fixed;
     border-bottom: 1px solid #bbbbbb; }
@@ -471,7 +465,7 @@ header {
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
-@media screen and (min-width: 40em) {
+@media screen and (min-width: 775px) {
   .nav-collapse {
     float: right;
     width: auto; } }
@@ -480,7 +474,7 @@ header {
   float: left;
   width: 100%; }
 
-@media screen and (min-width: 40em) {
+@media screen and (min-width: 775px) {
   .nav-collapse li {
     width: auto; } }
 
@@ -506,6 +500,12 @@ header {
 /* ------------------------------------------
   NAV TOGGLE STYLES
 --------------------------------------------- */
+@media screen and (max-width: 775px) {
+  .header_nav {
+    display: none; }
+  .header_nav.open_tray {
+    display: block; } }
+
 hr {
   display: block;
   height: 1px;
@@ -517,7 +517,7 @@ hr {
 .mobile_header {
   display: none; }
 
-@media screen and (max-width: 40em) {
+@media screen and (max-width: 775px) {
   .mobile_header {
     display: inline-block;
     float: right;
@@ -639,7 +639,7 @@ hr {
   background-position: center 25px;
   margin: auto; }
 
-@media screen and (max-width: 40em) {
+@media screen and (max-width: 775px) {
   .footer_logo_text {
     display: none; } }
 

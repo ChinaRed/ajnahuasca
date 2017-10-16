@@ -177,15 +177,7 @@ div{
 
 
 
-// Sets mobile nav header
-@media screen and (max-width: 40em) {
-  .header_nav{
-    display: none;
-  }
-  .header_nav.open_tray {
-    display: block;
-  }
-}
+
 
 // @media screen and (max-width: 40em){
 //   .header_nav {

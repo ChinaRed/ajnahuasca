@@ -63,7 +63,7 @@ header {
   // transition: 0.3s;
 }
 
-@media screen and (max-width: 40em) {
+@media screen and (max-width: 775px) {
   header{
     position: fixed;
     border-bottom: 1px solid #bbbbbb;
@@ -100,7 +100,7 @@ header {
 //   float: left;
 // }
 
-@media screen and (min-width: 40em) {
+@media screen and (min-width: 775px) {
   .nav-collapse {
     float: right;
     width: auto;
@@ -112,7 +112,8 @@ header {
   width: 100%;
 }
 
-@media screen and (min-width: 40em) {
+// Mobile tray open
+@media screen and (min-width: 775px) {
   .nav-collapse li {
     width: auto;
   }
@@ -144,6 +145,16 @@ header {
   NAV TOGGLE STYLES
 --------------------------------------------- */
 
+// Sets mobile nav header width to open tray
+@media screen and (max-width: 775px) {
+  .header_nav{
+    display: none;
+  }
+  .header_nav.open_tray {
+    display: block;
+  }
+}
+
 hr { 
     display: block;
     height: 1px;
@@ -159,7 +170,7 @@ hr {
 }
 
 // Hamburger Icon
-@media screen and (max-width: 40em) {
+@media screen and (max-width: 775px) {
   .mobile_header{
     display: inline-block;
     float: right;
@@ -309,7 +320,7 @@ hr {
   margin: auto;
 }
 
-@media screen and (max-width: 40em) {
+@media screen and (max-width: 775px) {
   .footer_logo_text{
     display: none;
   }
