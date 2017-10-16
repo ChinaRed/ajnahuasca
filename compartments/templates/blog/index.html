@@ -13,11 +13,11 @@
     <div class="spacer"></div>
     <div class="spacer"></div>
     <div class="row">
-    {{#sort_list items sort="published_on" order="asc"}}
+    {{#sort_list items sort="published_on" order="desc"}}
       <!-- <div class="spacer"></div> -->
       <div class="col-3 article center-div">
         {{#each fields.hero_image}}
-          <div class="col-1 show_image" style="background-image: url('{{url}}');">
+          <div class="col-1 show_image" style="background-image: url('{{secure_url}}');">
         {{/each}}
         </div> 
         <div class="col-5 article-list-text">
