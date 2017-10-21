@@ -1,5 +1,7 @@
 // Toggles Nav Tray (Mobile)
 $(document).ready(function(){
+  //allows back button on mobile
+  window.onunload = function(){};
   $('#nav-icon').click(function(){
     $(this).toggleClass('open');
     $('.header_nav').toggleClass('open_tray');
@@ -20,7 +22,6 @@ $(document).ready(function(){
     function redirectPage() {
         window.location = linkLocation;
     }
-});
 
 // Adds character limit on article summaries
 $(".listing-summary").each (function () {
@@ -41,6 +42,7 @@ $(".listing-summary").each (function () {
    }, 100);
   }
 
+});
 
 // $(function() {
 
