@@ -384,14 +384,19 @@ img {
     text-align: center; }
   .spacer {
     height: 20px; }
-  .article .article-list-text {
-    padding-top: 0;
-    padding-left: 10; }
-  .article .article-list-content {
-    display: none; }
-  .article .show_image {
-    width: 70px;
-    height: 70px; }
+  .article {
+    display: flex !important;
+    flex-direction: column; }
+    .article a {
+      font-size: 1em; }
+    .article .article-list-text {
+      padding-top: 0;
+      padding-left: 0; }
+    .article .show_image {
+      width: 100%;
+      height: 120px;
+      margin-top: 10px;
+      margin-bottom: 10px; }
   .contact_container {
     padding-right: 0 !important; }
   .article-header-image {
