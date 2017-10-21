@@ -1,7 +1,10 @@
-// Toggles Nav Tray (Mobile)
 $(document).ready(function(){
-  //allows back button on mobile
-  window.onunload = function(){};
+  $(window).bind('pageshow', function(event) {
+    if (event.originalEvent.persisted) {
+        window.location.reload();
+    }
+  });
+  // Toggles Nav Tray (Mobile)
   $('#nav-icon').click(function(){
     $(this).toggleClass('open');
     $('.header_nav').toggleClass('open_tray');
@@ -22,6 +25,8 @@ $(document).ready(function(){
     function redirectPage() {
         window.location = linkLocation;
     }
+});
+
 
 // Adds character limit on article summaries
 $(".listing-summary").each (function () {
@@ -30,19 +35,18 @@ $(".listing-summary").each (function () {
 });
 
   // Article Listing link that takes user to article detail view
-  $(".article").click(function(){
-      window.location = $(this).find("a:first").attr("href");
-      return false;
-  });
+$(".article").click(function(){
+    window.location = $(this).find("a:first").attr("href");
+    return false;
+});
 
 // Clears Contact fields form after submit
-  function clearFields(){
-    setTimeout(function() {
-      document.getElementById("contact-form").reset();
-   }, 100);
-  }
+function clearFields(){
+  setTimeout(function() {
+    document.getElementById("contact-form").reset();
+ }, 100);
+}
 
-});
 
 // $(function() {
 
