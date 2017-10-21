@@ -392,6 +392,8 @@ img {
     .article .article-list-text {
       padding-top: 0;
       padding-left: 0; }
+    .article .article-list-content {
+      overflow: hidden; }
     .article .show_image {
       width: 100%;
       height: 120px;
