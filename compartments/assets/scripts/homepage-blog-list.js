@@ -35,10 +35,8 @@ function getFieldValue(data, fieldName) {
 
 function recentBlogPosts(data) {
   // Creates Article Parts
-  // 
   // Sets up Grid for Article listing
-  var blogRow = $('<div></div>', {class:'row'});
-  var blogArticleContainer = $('<div></div>', {class:'col-3 center-div article'});
+  var blogArticleContainer = $('<div></div>');
 
   //Article Thumbnail Image
   var blogItemThumbnail = $('<div></div>', {class:'col-2 show_image'});
@@ -47,7 +45,7 @@ function recentBlogPosts(data) {
   $(blogItemThumbnail).attr('style', 'background-image:url("' + thumbnailUrl + '")');
 
   // Text Container for Article Listing
-  var blogTextContainer = $('<div></div>', {class:'col-4 article-list-text'});
+  var blogTextContainer = $('<div class="col-4 article-list-text"></div>');
 
   //Blog Article Title
   var blogArticleTitle = 'title';
@@ -55,15 +53,14 @@ function recentBlogPosts(data) {
 
   //Blog Publish Date
   var publishedDate = new Date(data.published_on);
-  var blogItemPublishDate = $('<div><h4>' + publishedDate + '</h4></div>', {class:'article-list-date'});
+  var blogItemPublishDate = $('<div class="article-list-date"><h4>' + publishedDate + '</h4></div>');
 
   //Blog Summary Content
   var blogArticleSummary = 'content';
-  var blogItemSummary = $('<div><p>' + getFieldValue(data, blogArticleSummary) + '</p></div>', {class:'article-list-content listing-summary'});
+  var blogItemSummary = $('<div class="article-list-content listing-summary"><p>' + getFieldValue(data, blogArticleSummary) + '</p></div>');
 
   //Builds Article Components
-  $('.row').append(blogRow);
-  $(blogRow).append(blogArticleContainer);
+  $('.article').append(blogArticleContainer);
   $(blogArticleContainer).append(blogItemThumbnail);
   $(blogArticleContainer).append(blogTextContainer);
   $(blogTextContainer).append(blogItemTitle);
