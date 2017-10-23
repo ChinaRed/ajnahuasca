@@ -36,7 +36,8 @@ function getFieldValue(data, fieldName) {
 function recentBlogPosts(data) {
   // Creates Article Parts
   // Sets up Grid for Article listing
-  var blogArticleContainer = $('<div></div>');
+  var blogRow = $('<div class="row"></div>');
+  var blogArticleContainer = $('<div class="col-3 center-div article"></div>');
 
   //Article Thumbnail Image
   var blogItemThumbnail = $('<div></div>', {class:'col-2 show_image'});
@@ -49,27 +50,52 @@ function recentBlogPosts(data) {
 
   //Blog Article Title
   var blogArticleTitle = 'title';
-  var blogItemTitle = $('<div><a>' + getFieldValue(data, blogArticleTitle) + '</a></div>', {class: 'article-list-title'});
+  var blogSlug = data.slug;
+  //Creates Title and href
+  var blogItemTitle = $('<div class="article-list-title">'+'<a href="'+ blogSlug +'">'+ getFieldValue(data, blogArticleTitle)+'</a>'+'</div>');
+  // Article Listing link that takes user to article detail view
+  $(".article").click(function(){
+      window.location = $(this).find("a:first").attr("href");
+      return false;
+  });
 
   //Blog Publish Date
   var publishedDate = new Date(data.published_on);
-  var blogItemPublishDate = $('<div class="article-list-date"><h4>' + publishedDate + '</h4></div>');
+  // // GETS MONTH
+  function getMonth(monthNum){
+    var months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+    return months[monthNum];
+  }
+  var blogItemPublishDate = $('<div class="article-list-date">'+'<h4>' + getMonth(publishedDate.getMonth()) + ' ' + publishedDate.getDate() + ', ' + publishedDate.getFullYear() + '</h4>'+'</div>');
+
+  // var blogItemPublishDate = $('<div class="article-list-date"><h4>' + date + '</h4></div>');
 
   //Blog Summary Content
   var blogArticleSummary = 'content';
-  var blogItemSummary = $('<div class="article-list-content listing-summary"><p>' + getFieldValue(data, blogArticleSummary) + '</p></div>');
+  var blogItemSummary = $('<div class="article-list-content listing-summary" style="overflow:hidden;">'+getFieldValue(data, blogArticleSummary)+'</div>');
+
+  //Spacer
+  var blogSpacer = $('<div class="spacer"></div><div class="spacer"></div>');
 
   //Builds Article Components
-  $('.article').append(blogArticleContainer);
+  $('.latest-articles').prepend(blogRow);
+  $(blogRow).append(blogArticleContainer);
+  $(blogRow).append(blogSpacer);
   $(blogArticleContainer).append(blogItemThumbnail);
   $(blogArticleContainer).append(blogTextContainer);
   $(blogTextContainer).append(blogItemTitle);
   $(blogTextContainer).append(blogItemPublishDate);
   $(blogTextContainer).append(blogItemSummary);
+
+  // Adds character limit on article summaries
+  $(".listing-summary").each (function () {
+    if ($(this).text().length > 210)
+      $(this).text($(this).text().substring(0,210) + '...   Read more');
+  });
 }
 
 
-// // GETS MONTH
+// // // GETS MONTH
 // function getMonth(monthNum){
 //   var months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
 //   return months[monthNum];
@@ -100,13 +126,13 @@ function recentBlogPosts(data) {
 //   var blogItemTitleValue = 'title'
 //   var blogItemTitle = $('<h2>' + getFieldValue(data, blogItemTitleValue) + '</h2>', { class: 'blog-item-title' });
 
-//   var publishedDate = new Date(data.published_on);
-//   if(getFieldValue(data, 'author')) {
-//     var author = getFieldValue(data, 'author')[0].permalink.split('-').join(' ');
-//     var date = $('<h4>By ' + capitalizeFirstLetter(author) + ' | ' + getMonth(publishedDate.getMonth()) + ' ' + publishedDate.getDate() + ', ' + publishedDate.getFullYear() + '</h4>', { class: 'blog-item-date' });
-//   } else {
-//     var date = $('<h4>' + getMonth(publishedDate.getMonth()) + ' ' + publishedDate.getDate() + ', ' + publishedDate.getFullYear() + '</h4>', { class: 'blog-item-date' });
-//   }
+  // var publishedDate = new Date(data.published_on);
+  // if(getFieldValue(data, 'author')) {
+  //   var author = getFieldValue(data, 'author')[0].permalink.split('-').join(' ');
+  //   var date = $('<h4>By ' + capitalizeFirstLetter(author) + ' | ' + getMonth(publishedDate.getMonth()) + ' ' + publishedDate.getDate() + ', ' + publishedDate.getFullYear() + '</h4>', { class: 'blog-item-date' });
+  // } else {
+  //   var date = $('<h4>' + getMonth(publishedDate.getMonth()) + ' ' + publishedDate.getDate() + ', ' + publishedDate.getFullYear() + '</h4>', { class: 'blog-item-date' });
+  // }
   
 //   var descriptionFieldName = 'short_description'
 //   var description = $('<p>' + getFieldValue(data, descriptionFieldName) + '</p>', { class: 'blog-item-short-description' });
