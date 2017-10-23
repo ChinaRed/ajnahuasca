@@ -12,7 +12,6 @@
           recentBlogPosts(item);
           // console.log(item);  
         });
-        console.log(data);
       }
     });
   }
@@ -53,11 +52,6 @@ function recentBlogPosts(data) {
   var blogSlug = data.slug;
   //Creates Title and href
   var blogItemTitle = $('<div class="article-list-title">'+'<a href="'+ blogSlug +'">'+ getFieldValue(data, blogArticleTitle)+'</a>'+'</div>');
-  // Article Listing link that takes user to article detail view
-  $(".article").click(function(){
-      window.location = $(this).find("a:first").attr("href");
-      return false;
-  });
 
   //Blog Publish Date
   var publishedDate = new Date(data.published_on);
@@ -92,7 +86,13 @@ function recentBlogPosts(data) {
     if ($(this).text().length > 210)
       $(this).text($(this).text().substring(0,210) + '...   Read more');
   });
+  // Article Listing link that takes user to article detail view
+  $(".article").click(function(){
+      window.location = $(this).find("a:first").attr("href");
+      return false;
+  });
 }
+
 
 
 // // // GETS MONTH
